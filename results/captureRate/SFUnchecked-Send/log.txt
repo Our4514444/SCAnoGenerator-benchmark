@@ -1,0 +1,385 @@
+INFO:Detectors:[91m
+SPEEDBULLPROV3.bug_unchk_send9() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#87-88) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#88)
+SPEEDBULLPROV3.bug_unchk_send16() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#91-92) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#92)
+SPEEDBULLPROV3.bug_unchk_send29() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#94-95) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#95)
+SPEEDBULLPROV3.bug_unchk_send12() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#97-98) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#98)
+SPEEDBULLPROV3.bug_unchk_send17() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#100-101) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#101)
+SPEEDBULLPROV3.bug_unchk_send11() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#103-104) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#104)
+SPEEDBULLPROV3.bug_unchk_send15() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#106-107) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#107)
+SPEEDBULLPROV3.bug_unchk_send6() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#109-110) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#110)
+SPEEDBULLPROV3.bug_unchk_send2() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#112-113) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#113)
+SPEEDBULLPROV3.bug_unchk_send28() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#115-116) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#116)
+SPEEDBULLPROV3.bug_unchk_send31() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#118-119) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#119)
+SPEEDBULLPROV3.bug_unchk_send24() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#121-122) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#122)
+SPEEDBULLPROV3.bug_unchk_send26() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#125-126) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#126)
+SPEEDBULLPROV3.bug_unchk_send21() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#128-129) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#129)
+SPEEDBULLPROV3.bug_unchk_send14() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#132-133) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#133)
+SPEEDBULLPROV3.bug_unchk_send32() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#137-138) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#138)
+SPEEDBULLPROV3.bug_unchk_send22() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#141-142) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#142)
+SPEEDBULLPROV3.bug_unchk_send10() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#280-281) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#281)
+SPEEDBULLPROV3.bug_unchk_send5() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#308-309) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#309)
+SPEEDBULLPROV3.bug_unchk_send1() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#347-348) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#348)
+SPEEDBULLPROV3.bug_unchk_send30() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#386-387) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#387)
+SPEEDBULLPROV3.bug_unchk_send27() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#423-424) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#424)
+SPEEDBULLPROV3.bug_unchk_send19() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#457-458) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#458)
+SPEEDBULLPROV3.bug_unchk_send4() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#491-492) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#492)
+SPEEDBULLPROV3.bug_unchk_send20() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#526-527) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#527)
+SPEEDBULLPROV3.bug_unchk_send18() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#558-559) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#559)
+SPEEDBULLPROV3.bug_unchk_send8() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#591-592) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#592)
+SPEEDBULLPROV3.bug_unchk_send3() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#625-626) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#626)
+SPEEDBULLPROV3.bug_unchk_send23() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#660-661) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#661)
+SPEEDBULLPROV3.bug_unchk_send25() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#694-695) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#695)
+SPEEDBULLPROV3.bug_unchk_send7() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#700-701) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#701)
+SPEEDBULLPROV3.sendBalance() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#703-709) sends eth to arbitrary user
+	Dangerous calls:
+	- ! address(uint160(ownerWallet)).send(getEthBalance()) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#705)
+SPEEDBULLPROV3.bug_unchk_send13() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#710-711) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(1000000000000000000) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#711)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations[0m
+INFO:Detectors:[92m
+Event SPEEDBULLPROV3regLevelEvent(address,address,uint256) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#127) is not in CapWords
+Event SPEEDBULLPROV3getMoneyForLevelEvent(address,address,uint256,uint256) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#130) is not in CapWords
+Event SPEEDBULLPROV3regPoolEntry(address,uint256,uint256) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#134) is not in CapWords
+Event SPEEDBULLPROV3getPoolPayment(address,address,uint256,uint256) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#139) is not in CapWords
+Function SPEEDBULLPROV3.bug_unchk_send9() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#87-88) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send16() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#91-92) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send29() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#94-95) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send12() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#97-98) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send17() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#100-101) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send11() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#103-104) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send15() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#106-107) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send6() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#109-110) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send2() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#112-113) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send28() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#115-116) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send31() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#118-119) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send24() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#121-122) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send26() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#125-126) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send21() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#128-129) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send14() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#132-133) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send32() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#137-138) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send22() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#141-142) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send10() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#280-281) is not in mixedCase
+Parameter SPEEDBULLPROV3.regUser(uint256)._referrerID (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#283) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send5() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#308-309) is not in mixedCase
+Parameter SPEEDBULLPROV3.payReferral(uint256,address)._level (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#312) is not in mixedCase
+Parameter SPEEDBULLPROV3.payReferral(uint256,address)._user (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#312) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send1() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#347-348) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send30() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#386-387) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send27() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#423-424) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send19() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#457-458) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send4() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#491-492) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send20() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#526-527) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send18() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#558-559) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send8() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#591-592) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send3() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#625-626) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send23() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#660-661) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send25() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#694-695) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send7() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#700-701) is not in mixedCase
+Function SPEEDBULLPROV3.bug_unchk_send13() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#710-711) is not in mixedCase
+Variable SPEEDBULLPROV3.unlimited_level_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#38) is not in mixedCase
+Variable SPEEDBULLPROV3.LEVEL_PRICE (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#89) is not in mixedCase
+Variable SPEEDBULLPROV3.REGESTRATION_FESS (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#93) is not in mixedCase
+Variable SPEEDBULLPROV3.pool1_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#96) is not in mixedCase
+Variable SPEEDBULLPROV3.pool2_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#99) is not in mixedCase
+Variable SPEEDBULLPROV3.pool3_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#102) is not in mixedCase
+Variable SPEEDBULLPROV3.pool4_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#105) is not in mixedCase
+Variable SPEEDBULLPROV3.pool5_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#108) is not in mixedCase
+Variable SPEEDBULLPROV3.pool6_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#111) is not in mixedCase
+Variable SPEEDBULLPROV3.pool7_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#114) is not in mixedCase
+Variable SPEEDBULLPROV3.pool8_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#117) is not in mixedCase
+Variable SPEEDBULLPROV3.pool9_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#120) is not in mixedCase
+Variable SPEEDBULLPROV3.pool10_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#123) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+Reentrancy in SPEEDBULLPROV3.buyPool1() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#353-385):
+	External calls:
+	- sent = address(uint160(pool1Currentuser)).send(pool1_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#374)
+	State variables written after the call(s):
+	- pool1activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#380)
+	- pool1users[pool1Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#377)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool1Currentuser,1,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#382)
+	- regPoolEntry(msg.sender,1,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#384)
+Reentrancy in SPEEDBULLPROV3.buyPool10() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#664-693):
+	External calls:
+	- sent = address(uint160(pool10Currentuser)).send(pool10_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#682)
+	State variables written after the call(s):
+	- pool10activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#688)
+	- pool10users[pool10Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#685)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool10Currentuser,10,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#690)
+	- regPoolEntry(msg.sender,10,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#692)
+Reentrancy in SPEEDBULLPROV3.buyPool2() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#390-422):
+	External calls:
+	- sent = address(uint160(pool2Currentuser)).send(pool2_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#411)
+	State variables written after the call(s):
+	- pool2activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#417)
+	- pool2users[pool2Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#414)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool2Currentuser,2,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#419)
+	- regPoolEntry(msg.sender,2,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#421)
+Reentrancy in SPEEDBULLPROV3.buyPool3() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#427-456):
+	External calls:
+	- sent = address(uint160(pool3Currentuser)).send(pool3_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#445)
+	State variables written after the call(s):
+	- pool3activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#451)
+	- pool3users[pool3Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#448)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool3Currentuser,3,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#453)
+	- regPoolEntry(msg.sender,3,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#455)
+Reentrancy in SPEEDBULLPROV3.buyPool4() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#461-490):
+	External calls:
+	- sent = address(uint160(pool4Currentuser)).send(pool4_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#479)
+	State variables written after the call(s):
+	- pool4activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#485)
+	- pool4users[pool4Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#482)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool4Currentuser,4,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#487)
+	- regPoolEntry(msg.sender,4,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#489)
+Reentrancy in SPEEDBULLPROV3.buyPool5() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#496-525):
+	External calls:
+	- sent = address(uint160(pool5Currentuser)).send(pool5_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#514)
+	State variables written after the call(s):
+	- pool5activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#520)
+	- pool5users[pool5Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#517)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool5Currentuser,5,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#522)
+	- regPoolEntry(msg.sender,5,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#524)
+Reentrancy in SPEEDBULLPROV3.buyPool6() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#529-557):
+	External calls:
+	- sent = address(uint160(pool6Currentuser)).send(pool6_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#546)
+	State variables written after the call(s):
+	- pool6activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#552)
+	- pool6users[pool6Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#549)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool6Currentuser,6,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#554)
+	- regPoolEntry(msg.sender,6,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#556)
+Reentrancy in SPEEDBULLPROV3.buyPool7() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#561-590):
+	External calls:
+	- sent = address(uint160(pool7Currentuser)).send(pool7_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#579)
+	State variables written after the call(s):
+	- pool7activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#585)
+	- pool7users[pool7Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#582)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool7Currentuser,7,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#587)
+	- regPoolEntry(msg.sender,7,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#589)
+Reentrancy in SPEEDBULLPROV3.buyPool8() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#595-624):
+	External calls:
+	- sent = address(uint160(pool8Currentuser)).send(pool8_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#613)
+	State variables written after the call(s):
+	- pool8activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#619)
+	- pool8users[pool8Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#616)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool8Currentuser,8,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#621)
+	- regPoolEntry(msg.sender,8,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#623)
+Reentrancy in SPEEDBULLPROV3.buyPool9() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#630-659):
+	External calls:
+	- sent = address(uint160(pool9Currentuser)).send(pool9_price) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#648)
+	State variables written after the call(s):
+	- pool9activeUserID += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#654)
+	- pool9users[pool9Currentuser].payment_received += 1 (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#651)
+	Event emitted after the call(s):
+	- getPoolPayment(msg.sender,pool9Currentuser,9,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#656)
+	- regPoolEntry(msg.sender,9,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#658)
+Reentrancy in SPEEDBULLPROV3.payReferral(uint256,address) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#312-346):
+	External calls:
+	- sent = address(uint160(referer)).send(level_price_local) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#327)
+	Event emitted after the call(s):
+	- getMoneyForLevelEvent(referer,msg.sender,_level,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#330)
+Reentrancy in SPEEDBULLPROV3.payReferral(uint256,address) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#312-346):
+	External calls:
+	- sent = address(uint160(referer)).send(level_price_local) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#327)
+	- payReferral(_level + 1,referer) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#332)
+		- ! address(uint160(ownerWallet)).send(getEthBalance()) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#705)
+		- sent = address(uint160(referer)).send(level_price_local) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#327)
+	Event emitted after the call(s):
+	- getMoneyForLevelEvent(referer,msg.sender,_level,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#330)
+		- payReferral(_level + 1,referer) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#332)
+Reentrancy in SPEEDBULLPROV3.payReferral(uint256,address) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#312-346):
+	External calls:
+	- sent = address(uint160(referer)).send(level_price_local) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#327)
+	- payReferral(_level + 1,referer) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#332)
+		- ! address(uint160(ownerWallet)).send(getEthBalance()) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#705)
+		- sent = address(uint160(referer)).send(level_price_local) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#327)
+	- sendBalance() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#336)
+		- ! address(uint160(ownerWallet)).send(getEthBalance()) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#705)
+	- payReferral(_level,referer) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#344)
+		- ! address(uint160(ownerWallet)).send(getEthBalance()) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#705)
+		- sent = address(uint160(referer)).send(level_price_local) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#327)
+	Event emitted after the call(s):
+	- getMoneyForLevelEvent(referer,msg.sender,_level,now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#330)
+		- payReferral(_level,referer) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#344)
+Reentrancy in SPEEDBULLPROV3.regUser(uint256) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#283-307):
+	External calls:
+	- payReferral(1,msg.sender) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#305)
+		- ! address(uint160(ownerWallet)).send(getEthBalance()) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#705)
+		- sent = address(uint160(referer)).send(level_price_local) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#327)
+	Event emitted after the call(s):
+	- regLevelEvent(msg.sender,userList[_referrerID],now) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#306)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4[0m
+INFO:Detectors:[92m
+SPEEDBULLPROV3.REGESTRATION_FESS (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#93) should be constant
+SPEEDBULLPROV3.pool10_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#123) should be constant
+SPEEDBULLPROV3.pool1_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#96) should be constant
+SPEEDBULLPROV3.pool2_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#99) should be constant
+SPEEDBULLPROV3.pool3_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#102) should be constant
+SPEEDBULLPROV3.pool4_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#105) should be constant
+SPEEDBULLPROV3.pool5_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#108) should be constant
+SPEEDBULLPROV3.pool6_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#111) should be constant
+SPEEDBULLPROV3.pool7_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#114) should be constant
+SPEEDBULLPROV3.pool8_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#117) should be constant
+SPEEDBULLPROV3.pool9_price (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#120) should be constant
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant[0m
+INFO:Detectors:[92m
+bug_unchk_send9() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send9() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#87-88)
+bug_unchk_send16() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send16() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#91-92)
+bug_unchk_send29() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send29() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#94-95)
+bug_unchk_send12() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send12() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#97-98)
+bug_unchk_send17() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send17() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#100-101)
+bug_unchk_send11() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send11() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#103-104)
+bug_unchk_send15() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send15() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#106-107)
+bug_unchk_send6() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send6() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#109-110)
+bug_unchk_send2() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send2() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#112-113)
+bug_unchk_send28() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send28() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#115-116)
+bug_unchk_send31() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send31() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#118-119)
+bug_unchk_send24() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send24() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#121-122)
+bug_unchk_send26() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send26() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#125-126)
+bug_unchk_send21() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send21() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#128-129)
+bug_unchk_send14() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send14() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#132-133)
+bug_unchk_send32() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send32() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#137-138)
+bug_unchk_send22() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send22() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#141-142)
+bug_unchk_send10() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send10() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#280-281)
+regUser(uint256) should be declared external:
+	- SPEEDBULLPROV3.regUser(uint256) (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#283-307)
+bug_unchk_send5() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send5() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#308-309)
+bug_unchk_send1() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send1() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#347-348)
+buyPool1() should be declared external:
+	- SPEEDBULLPROV3.buyPool1() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#353-385)
+bug_unchk_send30() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send30() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#386-387)
+buyPool2() should be declared external:
+	- SPEEDBULLPROV3.buyPool2() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#390-422)
+bug_unchk_send27() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send27() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#423-424)
+buyPool3() should be declared external:
+	- SPEEDBULLPROV3.buyPool3() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#427-456)
+bug_unchk_send19() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send19() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#457-458)
+buyPool4() should be declared external:
+	- SPEEDBULLPROV3.buyPool4() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#461-490)
+bug_unchk_send4() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send4() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#491-492)
+buyPool5() should be declared external:
+	- SPEEDBULLPROV3.buyPool5() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#496-525)
+bug_unchk_send20() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send20() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#526-527)
+buyPool6() should be declared external:
+	- SPEEDBULLPROV3.buyPool6() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#529-557)
+bug_unchk_send18() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send18() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#558-559)
+buyPool7() should be declared external:
+	- SPEEDBULLPROV3.buyPool7() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#561-590)
+bug_unchk_send8() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send8() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#591-592)
+buyPool8() should be declared external:
+	- SPEEDBULLPROV3.buyPool8() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#595-624)
+bug_unchk_send3() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send3() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#625-626)
+buyPool9() should be declared external:
+	- SPEEDBULLPROV3.buyPool9() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#630-659)
+bug_unchk_send23() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send23() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#660-661)
+buyPool10() should be declared external:
+	- SPEEDBULLPROV3.buyPool10() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#664-693)
+bug_unchk_send25() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send25() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#694-695)
+bug_unchk_send7() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send7() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#700-701)
+bug_unchk_send13() should be declared external:
+	- SPEEDBULLPROV3.bug_unchk_send13() (buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol#710-711)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external[0m
+INFO:Slither:buggy_0x71Be700eeE096eDb23eb3110219A01f4c8999747.sol analyzed (1 contracts with 46 detectors), 153 result(s) found
+INFO:Slither:[94mUse https://crytic.io/ to get access to additional detectors and Github integration[0m

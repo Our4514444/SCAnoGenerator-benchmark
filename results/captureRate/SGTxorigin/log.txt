@@ -1,0 +1,86 @@
+INFO:Detectors:[93m
+Reentrancy in pUNIVault.withdraw(uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#302-316):
+	External calls:
+	- token.safeTransfer(msg.sender,_amount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#312)
+	State variables written after the call(s):
+	- rewardBalances[msg.sender] = rewardBalances[msg.sender].sub(_amount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#314)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1[0m
+INFO:Detectors:[93m
+pUNIVault.setGovernance(address) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#243-246) uses tx.origin for authorization: require(bool,string)(tx.origin == governance,!governance) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#244)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-usage-of-txorigin[0m
+INFO:Detectors:[92m
+Reentrancy in pUNIVault.deposit(uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#252-280):
+	External calls:
+	- token.safeTransferFrom(msg.sender,feeAddress,feeAmount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#275)
+	- token.safeTransferFrom(msg.sender,vaultAddress,realAmount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#276)
+	State variables written after the call(s):
+	- depositBalances[msg.sender] = depositBalances[msg.sender].add(realAmount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#279)
+	- totalDeposit = totalDeposit.add(realAmount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#278)
+Reentrancy in pUNIVault.reward(uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#282-296):
+	External calls:
+	- token.safeTransferFrom(msg.sender,address(this),_amount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#286)
+	State variables written after the call(s):
+	- _rewardCount ++ (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#295)
+	- _rewards[_rewardCount].amount[addressIndices[i]] = _amount.mul(depositBalances[addressIndices[i]]).div(totalDeposit) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#291)
+	- _rewards[_rewardCount].time = block.timestamp (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#294)
+	- rewardBalances[addressIndices[i]] = rewardBalances[addressIndices[i]].add(_amount.mul(depositBalances[addressIndices[i]]).div(totalDeposit)) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#290)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2[0m
+INFO:Detectors:[92m
+Reentrancy in pUNIVault.withdraw(uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#302-316):
+	External calls:
+	- token.safeTransfer(msg.sender,_amount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#312)
+	Event emitted after the call(s):
+	- Withdrawn(msg.sender,_amount) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#315)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3[0m
+INFO:Detectors:[92m
+pUNIVault.withdraw(uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#302-316) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(_amount > 0,can't withdraw 0) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#304)
+	- _amount > availableWithdrawAmount (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#308)
+pUNIVault.availableWithdraw(address) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#318-325) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp < _rewards[i].time.add(604800) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#320)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp[0m
+INFO:Detectors:[92m
+Address.isContract(address) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#151-157) uses assembly
+	- INLINE ASM (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#155)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage[0m
+INFO:Detectors:[92m
+Low level call in Address.sendValue(address,uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#161-167):
+	- (success) = recipient.call.value(amount)() (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#165)
+Low level call in SafeERC20.callOptionalReturn(IERC20,bytes) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#198-209):
+	- (success,returndata) = address(token).call(data) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#202)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls[0m
+INFO:Detectors:[92m
+Contract pUNIVault (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#212-327) is not in CapWords
+Parameter pUNIVault.setGovernance(address)._governance (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#243) is not in mixedCase
+Parameter pUNIVault.deposit(uint256)._amount (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#252) is not in mixedCase
+Parameter pUNIVault.reward(uint256)._amount (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#282) is not in mixedCase
+Parameter pUNIVault.withdraw(uint256)._amount (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#302) is not in mixedCase
+Variable pUNIVault._rewards (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#230) is not in mixedCase
+Variable pUNIVault._rewardCount (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#231) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+totalSupply() should be declared external:
+	- ERC20.totalSupply() (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#40-42)
+balanceOf(address) should be declared external:
+	- ERC20.balanceOf(address) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#43-45)
+transfer(address,uint256) should be declared external:
+	- ERC20.transfer(address,uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#46-49)
+allowance(address,address) should be declared external:
+	- ERC20.allowance(address,address) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#50-52)
+approve(address,uint256) should be declared external:
+	- ERC20.approve(address,uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#53-56)
+transferFrom(address,address,uint256) should be declared external:
+	- ERC20.transferFrom(address,address,uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#57-61)
+increaseAllowance(address,uint256) should be declared external:
+	- ERC20.increaseAllowance(address,uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#62-65)
+decreaseAllowance(address,uint256) should be declared external:
+	- ERC20.decreaseAllowance(address,uint256) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#66-69)
+balance() should be declared external:
+	- pUNIVault.balance() (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#239-241)
+setGovernance(address) should be declared external:
+	- pUNIVault.setGovernance(address) (0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol#243-246)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external[0m
+INFO:Slither:0x35e9866bb7f13ebafea8ce557faf7d79f6a06ddf_txOriginForAuthentication.sol analyzed (7 contracts with 46 detectors), 27 result(s) found
+INFO:Slither:[94mUse https://crytic.io/ to get access to additional detectors and Github integration[0m

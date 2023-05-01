@@ -1,0 +1,2 @@
+(declare-fun STORAGE_af527e51df92dd14dc12d7f6f905a02a67897090 () (Array (_ BitVec 256) (_ BitVec 256)))
+(declare-fun STORAGE_2cb08bbb0c4b4d6d24b1b3837a5a806fb710d078 () (Array (_ BitVec 256) (_ BitVec 256)))

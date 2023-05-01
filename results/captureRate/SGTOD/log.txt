@@ -1,0 +1,12 @@
+2020-12-18 21:27:27,030: [22004] m.main:[34mINFO:[0m Registered plugins: <class 'manticore.core.plugin.IntrospectionAPIPlugin'>, DetectInvalid, DetectIntegerOverflow, DetectUninitializedStorage, DetectUninitializedMemory, DetectReentrancySimple, DetectReentrancyAdvanced, DetectUnusedRetVal, DetectSuicidal, DetectDelegatecall, DetectExternalCallAndLeak, DetectEnvInstruction, DetectManipulableBalance
+2020-12-18 21:27:27,030: [22004] m.main:[34mINFO:[0m Beginning analysis
+2020-12-18 21:27:27,032: [22004] m.e.manticore:[34mINFO:[0m Starting symbolic create contract
+2020-12-18 21:27:28,380: [22004] m.e.manticore:[34mINFO:[0m Found a concrete globalsha3 b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xd6:M\xe0\x14\xca\xba=\xd5/QE\x1a\x16\xae2\xb6\xa9\xc4\xbd\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01' -> 73237109637294420061893455249251621561288885276353531523347235726274983219233
+2020-12-18 21:27:29,905: [22004] m.e.manticore:[34mINFO:[0m Starting symbolic transaction: 0
+2020-12-18 21:27:38,475: [22004] m.e.detectors:[33mWARNING:[0m Potentially reading uninitialized storage
+2020-12-18 21:27:39,357: [22004] m.e.manticore:[34mINFO:[0m Found a concrete globalsha3 b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00BC"\xe7j\xdc{\xb6\xce:\x8e\xa8\xb2l\xc1\xa6\xf3\xe4\xc8-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01' -> 61982186796544758850107658780997258495142917056829994958332026642021759806070
+2020-12-18 21:27:52,315: [22004] m.e.manticore:[34mINFO:[0m Found a concrete globalsha3 b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00BC"\xe7j\xdc{\xb6\xce:\x8e\xa8\xb2l\xc1\xa6\xf3\xe4\xc8-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02' -> 34707653065995522905711146373739938873468240941103024590274873909801370523347
+2020-12-18 21:30:59,538: [22004] m.e.detectors:[33mWARNING:[0m Potentially reading uninitialized storage
+2020-12-18 21:31:33,140: [22004] m.e.detectors:[33mWARNING:[0m Potentially reading uninitialized storage
+2020-12-18 21:31:54,059: [22004] m.e.detectors:[33mWARNING:[0m Potentially reading uninitialized storage
+Killed

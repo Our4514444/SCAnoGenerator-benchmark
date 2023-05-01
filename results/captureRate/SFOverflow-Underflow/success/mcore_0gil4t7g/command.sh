@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x044082d51bcc68378b63f8774fb6b5d936b529b7.sol --contract IOAEX

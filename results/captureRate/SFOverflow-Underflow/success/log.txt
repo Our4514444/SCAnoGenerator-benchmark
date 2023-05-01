@@ -1,0 +1,28 @@
+2021-01-09 21:08:38,998: [378] m.main:[34mINFO:[0m Registered plugins: <class 'manticore.core.plugin.IntrospectionAPIPlugin'>, DetectInvalid, DetectIntegerOverflow, DetectUninitializedStorage, DetectUninitializedMemory, DetectReentrancySimple, DetectReentrancyAdvanced, DetectUnusedRetVal, DetectSuicidal, DetectDelegatecall, DetectExternalCallAndLeak, DetectEnvInstruction, DetectManipulableBalance
+2021-01-09 21:08:38,998: [378] m.main:[34mINFO:[0m Beginning analysis
+2021-01-09 21:08:39,000: [378] m.e.manticore:[34mINFO:[0m Starting symbolic create contract
+2021-01-09 21:08:45,452: [378] m.e.manticore:[34mINFO:[0m Found a concrete globalsha3 b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16' -> 97789825912453899259273410636466998099043528421815129078110847000656284369545
+2021-01-09 21:08:59,257: [378] m.e.manticore:[34mINFO:[0m Found a concrete globalsha3 b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x19' -> 67072331549493647622825787457569556318728415786901242217649037894484240406165
+2021-01-09 21:09:23,118: [378] m.e.manticore:[34mINFO:[0m Found a concrete globalsha3 b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1b' -> 26616959624788145501257665028759500958019551560565664426117466910078421933505
+2021-01-09 21:09:50,699: [378] m.c.worker:[31mERROR:[0m Exception in state 3: TypeError("unsupported operand type(s) for pow(): 'int', 'BitVecConstant', 'int'",)
+Traceback (most recent call last):
+  File "/home/xiaofeng/.local/lib/python3.6/site-packages/manticore/core/worker.py", line 121, in run
+    current_state.execute()
+  File "/home/xiaofeng/.local/lib/python3.6/site-packages/manticore/ethereum/state.py", line 8, in execute
+    return self._platform.execute()
+  File "/home/xiaofeng/.local/lib/python3.6/site-packages/manticore/platforms/evm.py", line 3093, in execute
+    self.current_vm.execute()
+  File "/home/xiaofeng/.local/lib/python3.6/site-packages/manticore/platforms/evm.py", line 1313, in execute
+    result = self._handler(*arguments)
+  File "/home/xiaofeng/.local/lib/python3.6/site-packages/manticore/platforms/evm.py", line 1179, in _handler
+    return implementation(*arguments)
+  File "/home/xiaofeng/.local/lib/python3.6/site-packages/manticore/platforms/evm.py", line 622, in wrapper
+    return func(*args, **kwargs)
+  File "/home/xiaofeng/.local/lib/python3.6/site-packages/manticore/platforms/evm.py", line 1555, in EXP
+    return pow(base, exponent, TT256)
+TypeError: unsupported operand type(s) for pow(): 'int', 'BitVecConstant', 'int'
+ 
+2021-01-09 21:09:50,804: [378] m.e.manticore:[34mINFO:[0m Failed to create contract: exception in constructor
+2021-01-09 21:09:50,863: [580] m.c.manticore:[34mINFO:[0m Generated testcase No. 0 - REVERT(1 txs)
+2021-01-09 21:09:50,864: [580] m.c.plugin:[33mWARNING:[0m Caught will_solve in state None, but failed to capture its initialization
+2021-01-09 21:09:51,125: [378] m.c.manticore:[34mINFO:[0m Results in /home/xiaofeng/桌面/捕获率数据集/Overflow-Underflow/success/mcore_8n_e88sa

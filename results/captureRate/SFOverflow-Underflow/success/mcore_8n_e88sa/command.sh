@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0xd445e2b21fb896571ab7ec8c00a682cce6feb995.sol --contract Asset

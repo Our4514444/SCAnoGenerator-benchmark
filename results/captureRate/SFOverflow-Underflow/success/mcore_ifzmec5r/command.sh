@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x4926865d7773504264f0c234851d159067ec7f12.sol --contract DappTokenMock

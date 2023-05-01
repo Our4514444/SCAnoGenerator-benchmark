@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0xb53626aaa587d2ee9bf79cf072e9b4fa74ea92de.sol --contract SafeMath

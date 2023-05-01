@@ -1,0 +1,13 @@
+Message: NO STATE RESULT (?)
+Last exception: None
+2 accounts.
+* owner::
+Address: 0x58aeca82fbabedd1c3ae83bc7acdc70c2e7d46c9 
+Balance: 10000000000 
+Storage: STORAGE_58aeca82fbabedd1c3ae83bc7acdc70c2e7d46c9
+
+* attacker::
+Address: 0x43b95059f4eb9f48f4c5548cd2b44d229b53f96d 
+Balance: 10000000000 
+Storage: STORAGE_43b95059f4eb9f48f4c5548cd2b44d229b53f96d
+

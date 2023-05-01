@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x81471dbb5317f84c5605522e4df07b2c00b8027e.sol --contract SmartFundERC20

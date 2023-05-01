@@ -1,0 +1,8 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+buggy_0xcae8d3413debe1b874b99f28e9eefca54ac29cc2.sol:5:1: ParserError: Source file requires different compiler version (current compiler is 0.6.2+commit.bacdbe57.Linux.g++ - note that nightly builds are considered to be strictly less than the released version
+pragma solidity ^0.5.2;
+^---------------------^
+
+SolidityVersionMismatch: Try adding the option "--solv 0.5.2"
+ 

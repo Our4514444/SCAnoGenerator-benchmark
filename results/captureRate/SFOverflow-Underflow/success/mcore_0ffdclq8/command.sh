@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x72c638bd40961311faf25ee84d0ec89b3e10593c.sol --contract ERC20Chocolate

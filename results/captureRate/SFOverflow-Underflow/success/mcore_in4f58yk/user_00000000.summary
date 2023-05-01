@@ -1,0 +1,69 @@
+Message: REVERT
+Last exception: REVERT
+Last instruction at contract c4c60d126641393a32fa724384eb211fa974e421 offset 1f
+    286  library SafeMath {
+        287      
+        288      /**
+        289      * @dev Multiplies two numbers, throws on overflow.
+        290      */
+        291      function mul(uint256 a, uint256 b) internal pure returns (uint256 c) {
+        292          if (a == 0 || b == 0) {
+        293             return 0;
+        294          }
+        295          c = a * b;
+        296          assert(c / a == b);
+        297          return c;
+        298      }
+        299      
+        300      /**
+        301      * @dev Integer division of two numbers, truncating the quotient.
+        302      */
+        303      function div(uint256 a, uint256 b) internal pure returns (uint256) {
+        304          // assert(b > 0); // Solidity automatically throws when dividing by 0
+        305          // uint256 c = a / b;
+        306          // assert(a == b * c + a % b); // There is no case in which this doesn't hold
+        307          return a / b;
+        308      }
+        309      
+        310      /**
+        311      * @dev Subtracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend).
+        312      */
+        313      function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        314          assert(b <= a);
+        315          return a - b;
+        316      }
+        317      
+        318      /**
+        319      * @dev Adds two numbers, throws on overflow.
+        320      */
+        321      function add(uint256 a, uint256 b) internal pure returns (uint256 c) {
+        322          c = a + b;
+        323          assert(c >= a);
+        324          return c;
+        325      }
+        326  }
+
+3 accounts.
+* owner::
+Address: 0xdc5c5f018bfc50e45d39d39c0390cd3b92a26e44 
+Balance: 8589899454 (*)
+Storage: STORAGE_dc5c5f018bfc50e45d39d39c0390cd3b92a26e44
+
+* attacker::
+Address: 0x53cf6578ac32ed775080d8e2463bf3d016afeb07 
+Balance: 9999977688 (*)
+Storage: STORAGE_53cf6578ac32ed775080d8e2463bf3d016afeb07
+
+* contract0::
+Address: 0xc4c60d126641393a32fa724384eb211fa974e421 
+Balance: 1410066832 (*)
+Storage: STORAGE_c4c60d126641393a32fa724384eb211fa974e421
+Code:
+	b'73c4c60d126641393a32fa724384eb211fa974e42130146080604052600080fd'
+	b'fea265627a7a72315820bb37050ebb486d11ff9aa1b2ab08e620ec575a47e77c'
+	b'44cd7f0599635451d50564736f6c63430005100032'
+Coverage 45% (on this state)
+
+
+
+(*) Example solution given. Value is symbolic and may take other values

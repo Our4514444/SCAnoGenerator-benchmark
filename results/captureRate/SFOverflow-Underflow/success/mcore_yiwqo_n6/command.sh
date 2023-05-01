@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x4e26ceb8a932114a95cfb682851b6e832f830062.sol --contract MoonGainToken

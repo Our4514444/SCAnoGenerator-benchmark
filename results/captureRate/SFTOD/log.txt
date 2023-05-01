@@ -1,0 +1,394 @@
+buggy_0xcf6085096a1ac5ccdbc4e53ea5b62d23cf29f962_TOD.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 9:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 29:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 52:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 81:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 101:88 extraneous input 'data' expecting {',', ')'}
+line 103:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 125:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 144:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 162:10 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 177:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 195:10 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 211:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 229:10 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 243:10 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 259:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 278:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 301:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 317:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 333:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 352:10 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 376:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 397:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 414:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 437:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 460:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 483:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 498:76 extraneous input 'data' expecting {',', ')'}
+line 504:8 extraneous input 'payable' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 8
+column: 2
+content: boolclaimed_TOD22=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 9
+column: 0
+content: addresspayableowner_TOD22;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 10
+column: 0
+content: uint256reward_TOD22;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 28
+column: 2
+content: boolclaimed_TOD14=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 29
+column: 0
+content: addresspayableowner_TOD14;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 30
+column: 0
+content: uint256reward_TOD14;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 51
+column: 0
+content: boolclaimed_TOD20=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 52
+column: 0
+content: addresspayableowner_TOD20;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 53
+column: 0
+content: uint256reward_TOD20;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 80
+column: 0
+content: boolclaimed_TOD18=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 81
+column: 0
+content: addresspayableowner_TOD18;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 82
+column: 0
+content: uint256reward_TOD18;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 102
+column: 0
+content: boolclaimed_TOD8=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 103
+column: 0
+content: addresspayableowner_TOD8;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 104
+column: 0
+content: uint256reward_TOD8;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 124
+column: 2
+content: boolclaimed_TOD10=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 125
+column: 0
+content: addresspayableowner_TOD10;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 126
+column: 0
+content: uint256reward_TOD10;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 143
+column: 2
+content: boolclaimed_TOD34=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 144
+column: 0
+content: addresspayableowner_TOD34;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 145
+column: 0
+content: uint256reward_TOD34;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 162
+column: 2
+content: addresspayablewinner_TOD5;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 176
+column: 2
+content: boolclaimed_TOD36=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 177
+column: 0
+content: addresspayableowner_TOD36;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 178
+column: 0
+content: uint256reward_TOD36;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 195
+column: 2
+content: addresspayablewinner_TOD1;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 210
+column: 2
+content: boolclaimed_TOD30=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 211
+column: 0
+content: addresspayableowner_TOD30;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 212
+column: 0
+content: uint256reward_TOD30;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 229
+column: 2
+content: addresspayablewinner_TOD27;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 243
+column: 2
+content: addresspayablewinner_TOD19;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 258
+column: 2
+content: boolclaimed_TOD38=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 259
+column: 0
+content: addresspayableowner_TOD38;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 260
+column: 0
+content: uint256reward_TOD38;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 277
+column: 2
+content: boolclaimed_TOD32=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 278
+column: 0
+content: addresspayableowner_TOD32;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 279
+column: 0
+content: uint256reward_TOD32;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 301
+column: 0
+content: addresspayablewinner_TOD3;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 317
+column: 0
+content: addresspayablewinner_TOD37;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 332
+column: 2
+content: boolclaimed_TOD4=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 333
+column: 0
+content: addresspayableowner_TOD4;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 334
+column: 0
+content: uint256reward_TOD4;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 352
+column: 2
+content: addresspayablewinner_TOD35;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 376
+column: 0
+content: addresspayablewinner_TOD23;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 397
+column: 0
+content: addresspayablewinner_TOD25;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 414
+column: 0
+content: addresspayablewinner_TOD7;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 437
+column: 0
+content: addresspayablewinner_TOD13;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 459
+column: 0
+content: boolclaimed_TOD26=false;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 460
+column: 0
+content: addresspayableowner_TOD26;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 461
+column: 0
+content: uint256reward_TOD26;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 483
+column: 0
+content: addresspayablewinner_TOD39;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 504
+column: 0
+content: addresspayablewinner_TOD21;
+
+SOLIDITY_VISIBILITY :52

@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x85A2f1B3174669349c9256447c4Bf8A95493a9CA.sol --contract Divvy

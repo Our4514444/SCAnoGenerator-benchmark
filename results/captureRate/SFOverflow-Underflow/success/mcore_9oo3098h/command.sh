@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0xa79b2c8eb39dde841bd1981c48e012eff156ba5e.sol --contract ShareholderVomer

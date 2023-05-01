@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x25407d3f1868d09d6d09202d81fde4abca794508.sol --contract UniswapV2Pair

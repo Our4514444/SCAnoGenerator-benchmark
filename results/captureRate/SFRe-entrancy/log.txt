@@ -1,0 +1,379 @@
+Compilation warnings/errors on buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol:
+buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol:168:9: Warning: Return value of low-level calls not used.
+        msg.sender.call.value(1)("");	//injected REENTRANCY
+        ^--------------------------^
+
+INFO:Detectors:[91m
+Owned.bug_re_ent34() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#17-23) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#19)
+Owned.callme_re_ent35() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#29-35) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#31)
+Owned.bug_re_ent20() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#42-48) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#44)
+UnlockVideo.buyTicket_re_ent30() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#96-101) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (lastPlayer_re_ent30.send(jackpot_re_ent30)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#97)
+UnlockVideo.bug_re_ent27() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#104-110) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#106)
+UnlockVideo.buyTicket_re_ent37() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#176-181) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (lastPlayer_re_ent37.send(jackpot_re_ent37)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#177)
+UnlockVideo.buyTicket_re_ent23() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#190-195) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (lastPlayer_re_ent23.send(jackpot_re_ent23)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#191)
+UnlockVideo.callme_re_ent7() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#221-227) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#223)
+UnlockVideo.bug_re_ent13() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#235-242) sends eth to arbitrary user
+	Dangerous calls:
+	- (success) = msg.sender.call.value(1000000000000000000)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#237)
+UnlockVideo.bug_re_ent41() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#276-282) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#278)
+UnlockVideo.callme_re_ent21() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#292-298) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#294)
+UnlockVideo.callme_re_ent14() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#307-313) sends eth to arbitrary user
+	Dangerous calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#309)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations[0m
+INFO:Detectors:[91m
+Reentrancy in UnlockVideo.addVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#165-173):
+	External calls:
+	- msg.sender.call.value(1)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#168)
+	State variables written after the call(s):
+	- balances[msg.sender] -= add (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#169)
+Reentrancy in UnlockVideo.bug_re_ent13() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#235-242):
+	External calls:
+	- (success) = msg.sender.call.value(1000000000000000000)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#237)
+	State variables written after the call(s):
+	- not_called_re_ent13 = false (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#241)
+Reentrancy in UnlockVideo.withdrawBalance_re_ent26() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#250-258):
+	External calls:
+	- (success) = msg.sender.call.value(userBalance_re_ent26[msg.sender])() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#253)
+	State variables written after the call(s):
+	- userBalance_re_ent26[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#257)
+Reentrancy in UnlockVideo.withdrawFunds_re_ent3(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#157-163):
+	External calls:
+	- (success) = msg.sender.call.value(_weiToWithdraw)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#160)
+	State variables written after the call(s):
+	- balances_re_ent3[msg.sender] -= _weiToWithdraw (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#162)
+Reentrancy in UnlockVideo.withdraw_balances_re_ent1() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#88-92):
+	External calls:
+	- (success) = msg.sender.call.value(balances_re_ent1[msg.sender])() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#89)
+	State variables written after the call(s):
+	- balances_re_ent1[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#91)
+Reentrancy in ERC20.withdraw_balances_re_ent8() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#63-67):
+	External calls:
+	- (success) = msg.sender.call.value(balances_re_ent8[msg.sender])() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#64)
+	State variables written after the call(s):
+	- balances_re_ent8[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#66)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities[0m
+INFO:Detectors:[93m
+UnlockVideo.addVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#165-173) ignores return value by msg.sender.call.value(1)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#168)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls[0m
+INFO:Detectors:[93m
+UnlockVideo.addVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#165-173) ignores return value by ERC20(token).transfer(msg.sender,bonus) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#170)
+UnlockVideo.donateVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#197-205) ignores return value by ERC20(token).transfer(msg.sender,bonus) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#201)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return[0m
+INFO:Detectors:[92m
+Reentrancy in UnlockVideo.donateVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#197-205):
+	External calls:
+	- ERC20(token).transfer(msg.sender,bonus) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#201)
+	Event emitted after the call(s):
+	- Donate(videos[_id],donates[videos[_id]]) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#202)
+	- Video(msg.sender,_id) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#203)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3[0m
+INFO:Detectors:[92m
+Pragma version^0.5.1 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#1) allows old versions
+solc-0.5.1 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Detectors:[92m
+Low level call in ERC20.withdraw_balances_re_ent8() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#63-67):
+	- (success) = msg.sender.call.value(balances_re_ent8[msg.sender])() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#64)
+Low level call in UnlockVideo.withdraw_balances_re_ent1() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#88-92):
+	- (success) = msg.sender.call.value(balances_re_ent1[msg.sender])() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#89)
+Low level call in UnlockVideo.withdrawFunds_re_ent3(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#157-163):
+	- (success) = msg.sender.call.value(_weiToWithdraw)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#160)
+Low level call in UnlockVideo.addVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#165-173):
+	- msg.sender.call.value(1)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#168)
+Low level call in UnlockVideo.bug_re_ent13() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#235-242):
+	- (success) = msg.sender.call.value(1000000000000000000)() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#237)
+Low level call in UnlockVideo.withdrawBalance_re_ent26() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#250-258):
+	- (success) = msg.sender.call.value(userBalance_re_ent26[msg.sender])() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#253)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls[0m
+INFO:Detectors:[92m
+Function Owned.withdrawFunds_re_ent10(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#9-14) is not in mixedCase
+Parameter Owned.withdrawFunds_re_ent10(uint256)._weiToWithdraw (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#9) is not in mixedCase
+Function Owned.bug_re_ent34() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#17-23) is not in mixedCase
+Parameter Owned.changeOwner(address)._newOwner (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#25) is not in mixedCase
+Function Owned.callme_re_ent35() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#29-35) is not in mixedCase
+Function Owned.bug_re_ent20() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#42-48) is not in mixedCase
+Variable Owned.balances_re_ent10 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#8) is not in mixedCase
+Variable Owned.not_called_re_ent34 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#16) is not in mixedCase
+Variable Owned.counter_re_ent35 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#28) is not in mixedCase
+Variable Owned.not_called_re_ent20 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#41) is not in mixedCase
+Function ERC20.claimReward_re_ent18() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#54-60) is not in mixedCase
+Function ERC20.withdraw_balances_re_ent8() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#63-67) is not in mixedCase
+Variable ERC20.redeemableEther_re_ent18 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#53) is not in mixedCase
+Variable ERC20.balances_re_ent8 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#62) is not in mixedCase
+Function UnlockVideo.withdrawBalance_re_ent5() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#72-79) is not in mixedCase
+Function UnlockVideo.withdraw_balances_re_ent36() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#82-85) is not in mixedCase
+Function UnlockVideo.withdraw_balances_re_ent1() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#88-92) is not in mixedCase
+Function UnlockVideo.buyTicket_re_ent30() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#96-101) is not in mixedCase
+Function UnlockVideo.bug_re_ent27() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#104-110) is not in mixedCase
+Function UnlockVideo.withdrawBalance_re_ent19() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#113-120) is not in mixedCase
+Function UnlockVideo.claimReward_re_ent4() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#123-129) is not in mixedCase
+Function UnlockVideo.withdrawFunds_re_ent38(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#132-137) is not in mixedCase
+Parameter UnlockVideo.withdrawFunds_re_ent38(uint256)._weiToWithdraw (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#132) is not in mixedCase
+Function UnlockVideo.claimReward_re_ent32() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#140-146) is not in mixedCase
+Function UnlockVideo.withdrawFunds_re_ent3(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#157-163) is not in mixedCase
+Parameter UnlockVideo.withdrawFunds_re_ent3(uint256)._weiToWithdraw (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#157) is not in mixedCase
+Parameter UnlockVideo.addVideo(bytes32)._id (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#165) is not in mixedCase
+Function UnlockVideo.buyTicket_re_ent37() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#176-181) is not in mixedCase
+Parameter UnlockVideo.changeDonate(uint256)._donate (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#183) is not in mixedCase
+Function UnlockVideo.buyTicket_re_ent23() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#190-195) is not in mixedCase
+Parameter UnlockVideo.donateVideo(bytes32)._id (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#197) is not in mixedCase
+Function UnlockVideo.claimReward_re_ent25() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#207-213) is not in mixedCase
+Parameter UnlockVideo.changeAdd(uint256)._add (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#215) is not in mixedCase
+Function UnlockVideo.callme_re_ent7() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#221-227) is not in mixedCase
+Parameter UnlockVideo.changeFee(uint8)._fee (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#229) is not in mixedCase
+Function UnlockVideo.bug_re_ent13() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#235-242) is not in mixedCase
+Parameter UnlockVideo.changeBonus(uint8)._bonus (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#244) is not in mixedCase
+Function UnlockVideo.withdrawBalance_re_ent26() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#250-258) is not in mixedCase
+Parameter UnlockVideo.getBalance(address)._owner (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#260) is not in mixedCase
+Function UnlockVideo.claimReward_re_ent39() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#264-270) is not in mixedCase
+Parameter UnlockVideo.getDonate(address)._owner (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#272) is not in mixedCase
+Function UnlockVideo.bug_re_ent41() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#276-282) is not in mixedCase
+Parameter UnlockVideo.withdrawEth(uint256)._amount (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#284) is not in mixedCase
+Function UnlockVideo.callme_re_ent21() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#292-298) is not in mixedCase
+Function UnlockVideo.callme_re_ent14() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#307-313) is not in mixedCase
+Variable UnlockVideo.userBalance_re_ent5 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#71) is not in mixedCase
+Variable UnlockVideo.balances_re_ent36 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#81) is not in mixedCase
+Variable UnlockVideo.balances_re_ent1 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#87) is not in mixedCase
+Variable UnlockVideo.lastPlayer_re_ent30 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#94) is not in mixedCase
+Variable UnlockVideo.jackpot_re_ent30 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#95) is not in mixedCase
+Variable UnlockVideo.not_called_re_ent27 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#103) is not in mixedCase
+Variable UnlockVideo.userBalance_re_ent19 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#112) is not in mixedCase
+Variable UnlockVideo.redeemableEther_re_ent4 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#122) is not in mixedCase
+Variable UnlockVideo.balances_re_ent38 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#131) is not in mixedCase
+Variable UnlockVideo.redeemableEther_re_ent32 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#139) is not in mixedCase
+Variable UnlockVideo.balances_re_ent3 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#156) is not in mixedCase
+Variable UnlockVideo.lastPlayer_re_ent37 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#174) is not in mixedCase
+Variable UnlockVideo.jackpot_re_ent37 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#175) is not in mixedCase
+Variable UnlockVideo.lastPlayer_re_ent23 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#188) is not in mixedCase
+Variable UnlockVideo.jackpot_re_ent23 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#189) is not in mixedCase
+Variable UnlockVideo.redeemableEther_re_ent25 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#206) is not in mixedCase
+Variable UnlockVideo.counter_re_ent7 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#220) is not in mixedCase
+Variable UnlockVideo.not_called_re_ent13 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#234) is not in mixedCase
+Variable UnlockVideo.userBalance_re_ent26 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#249) is not in mixedCase
+Variable UnlockVideo.redeemableEther_re_ent39 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#263) is not in mixedCase
+Variable UnlockVideo.not_called_re_ent41 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#275) is not in mixedCase
+Variable UnlockVideo.counter_re_ent21 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#291) is not in mixedCase
+Variable UnlockVideo.counter_re_ent14 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#306) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+Reentrancy in Owned.bug_re_ent20() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#42-48):
+	External calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#44)
+	State variables written after the call(s):
+	- not_called_re_ent20 = false (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#47)
+Reentrancy in UnlockVideo.bug_re_ent27() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#104-110):
+	External calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#106)
+	State variables written after the call(s):
+	- not_called_re_ent27 = false (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#109)
+Reentrancy in Owned.bug_re_ent34() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#17-23):
+	External calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#19)
+	State variables written after the call(s):
+	- not_called_re_ent34 = false (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#22)
+Reentrancy in UnlockVideo.bug_re_ent41() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#276-282):
+	External calls:
+	- ! (msg.sender.send(1000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#278)
+	State variables written after the call(s):
+	- not_called_re_ent41 = false (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#281)
+Reentrancy in UnlockVideo.buyTicket_re_ent23() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#190-195):
+	External calls:
+	- ! (lastPlayer_re_ent23.send(jackpot_re_ent23)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#191)
+	State variables written after the call(s):
+	- jackpot_re_ent23 = address(this).balance (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#194)
+	- lastPlayer_re_ent23 = msg.sender (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#193)
+Reentrancy in UnlockVideo.buyTicket_re_ent30() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#96-101):
+	External calls:
+	- ! (lastPlayer_re_ent30.send(jackpot_re_ent30)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#97)
+	State variables written after the call(s):
+	- jackpot_re_ent30 = address(this).balance (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#100)
+	- lastPlayer_re_ent30 = msg.sender (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#99)
+Reentrancy in UnlockVideo.buyTicket_re_ent37() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#176-181):
+	External calls:
+	- ! (lastPlayer_re_ent37.send(jackpot_re_ent37)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#177)
+	State variables written after the call(s):
+	- jackpot_re_ent37 = address(this).balance (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#180)
+	- lastPlayer_re_ent37 = msg.sender (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#179)
+Reentrancy in UnlockVideo.callme_re_ent14() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#307-313):
+	External calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#309)
+	State variables written after the call(s):
+	- counter_re_ent14 += 1 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#312)
+Reentrancy in UnlockVideo.callme_re_ent21() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#292-298):
+	External calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#294)
+	State variables written after the call(s):
+	- counter_re_ent21 += 1 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#297)
+Reentrancy in Owned.callme_re_ent35() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#29-35):
+	External calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#31)
+	State variables written after the call(s):
+	- counter_re_ent35 += 1 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#34)
+Reentrancy in UnlockVideo.callme_re_ent7() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#221-227):
+	External calls:
+	- ! (msg.sender.send(10000000000000000000)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#223)
+	State variables written after the call(s):
+	- counter_re_ent7 += 1 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#226)
+Reentrancy in ERC20.claimReward_re_ent18() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#54-60):
+	External calls:
+	- msg.sender.transfer(transferValue_re_ent18) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#58)
+	State variables written after the call(s):
+	- redeemableEther_re_ent18[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#59)
+Reentrancy in UnlockVideo.claimReward_re_ent25() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#207-213):
+	External calls:
+	- msg.sender.transfer(transferValue_re_ent25) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#211)
+	State variables written after the call(s):
+	- redeemableEther_re_ent25[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#212)
+Reentrancy in UnlockVideo.claimReward_re_ent32() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#140-146):
+	External calls:
+	- msg.sender.transfer(transferValue_re_ent32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#144)
+	State variables written after the call(s):
+	- redeemableEther_re_ent32[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#145)
+Reentrancy in UnlockVideo.claimReward_re_ent39() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#264-270):
+	External calls:
+	- msg.sender.transfer(transferValue_re_ent39) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#268)
+	State variables written after the call(s):
+	- redeemableEther_re_ent39[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#269)
+Reentrancy in UnlockVideo.claimReward_re_ent4() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#123-129):
+	External calls:
+	- msg.sender.transfer(transferValue_re_ent4) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#127)
+	State variables written after the call(s):
+	- redeemableEther_re_ent4[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#128)
+Reentrancy in UnlockVideo.fallback() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#300-305):
+	External calls:
+	- owner.transfer(deduct) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#303)
+	State variables written after the call(s):
+	- balances[msg.sender] += msg.value - deduct (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#304)
+Reentrancy in UnlockVideo.withdrawBalance_re_ent19() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#113-120):
+	External calls:
+	- ! (msg.sender.send(userBalance_re_ent19[msg.sender])) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#116)
+	State variables written after the call(s):
+	- userBalance_re_ent19[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#119)
+Reentrancy in UnlockVideo.withdrawBalance_re_ent5() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#72-79):
+	External calls:
+	- ! (msg.sender.send(userBalance_re_ent5[msg.sender])) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#75)
+	State variables written after the call(s):
+	- userBalance_re_ent5[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#78)
+Reentrancy in Owned.withdrawFunds_re_ent10(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#9-14):
+	External calls:
+	- require(bool)(msg.sender.send(_weiToWithdraw)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#12)
+	State variables written after the call(s):
+	- balances_re_ent10[msg.sender] -= _weiToWithdraw (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#13)
+Reentrancy in UnlockVideo.withdrawFunds_re_ent38(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#132-137):
+	External calls:
+	- require(bool)(msg.sender.send(_weiToWithdraw)) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#135)
+	State variables written after the call(s):
+	- balances_re_ent38[msg.sender] -= _weiToWithdraw (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#136)
+Reentrancy in UnlockVideo.withdraw_balances_re_ent36() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#82-85):
+	External calls:
+	- msg.sender.send(balances_re_ent36[msg.sender]) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#83)
+	State variables written after the call(s):
+	- balances_re_ent36[msg.sender] = 0 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#84)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4[0m
+INFO:Detectors:[92m
+UnlockVideo.constructor() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#149-155) uses literals with too many digits:
+	- add = 5000000000000000 (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#150)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits[0m
+INFO:Detectors:[92m
+withdrawFunds_re_ent10(uint256) should be declared external:
+	- Owned.withdrawFunds_re_ent10(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#9-14)
+bug_re_ent34() should be declared external:
+	- Owned.bug_re_ent34() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#17-23)
+changeOwner(address) should be declared external:
+	- Owned.changeOwner(address) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#25-27)
+callme_re_ent35() should be declared external:
+	- Owned.callme_re_ent35() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#29-35)
+acceptOwnership() should be declared external:
+	- Owned.acceptOwnership() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#36-40)
+bug_re_ent20() should be declared external:
+	- Owned.bug_re_ent20() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#42-48)
+balanceOf(address) should be declared external:
+	- ERC20.balanceOf(address) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#52)
+claimReward_re_ent18() should be declared external:
+	- ERC20.claimReward_re_ent18() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#54-60)
+transfer(address,uint256) should be declared external:
+	- ERC20.transfer(address,uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#61)
+withdraw_balances_re_ent8() should be declared external:
+	- ERC20.withdraw_balances_re_ent8() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#63-67)
+withdrawBalance_re_ent5() should be declared external:
+	- UnlockVideo.withdrawBalance_re_ent5() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#72-79)
+withdraw_balances_re_ent36() should be declared external:
+	- UnlockVideo.withdraw_balances_re_ent36() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#82-85)
+withdraw_balances_re_ent1() should be declared external:
+	- UnlockVideo.withdraw_balances_re_ent1() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#88-92)
+buyTicket_re_ent30() should be declared external:
+	- UnlockVideo.buyTicket_re_ent30() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#96-101)
+bug_re_ent27() should be declared external:
+	- UnlockVideo.bug_re_ent27() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#104-110)
+withdrawBalance_re_ent19() should be declared external:
+	- UnlockVideo.withdrawBalance_re_ent19() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#113-120)
+claimReward_re_ent4() should be declared external:
+	- UnlockVideo.claimReward_re_ent4() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#123-129)
+withdrawFunds_re_ent38(uint256) should be declared external:
+	- UnlockVideo.withdrawFunds_re_ent38(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#132-137)
+claimReward_re_ent32() should be declared external:
+	- UnlockVideo.claimReward_re_ent32() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#140-146)
+withdrawFunds_re_ent3(uint256) should be declared external:
+	- UnlockVideo.withdrawFunds_re_ent3(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#157-163)
+addVideo(bytes32) should be declared external:
+	- UnlockVideo.addVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#165-173)
+buyTicket_re_ent37() should be declared external:
+	- UnlockVideo.buyTicket_re_ent37() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#176-181)
+changeDonate(uint256) should be declared external:
+	- UnlockVideo.changeDonate(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#183-187)
+buyTicket_re_ent23() should be declared external:
+	- UnlockVideo.buyTicket_re_ent23() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#190-195)
+donateVideo(bytes32) should be declared external:
+	- UnlockVideo.donateVideo(bytes32) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#197-205)
+claimReward_re_ent25() should be declared external:
+	- UnlockVideo.claimReward_re_ent25() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#207-213)
+changeAdd(uint256) should be declared external:
+	- UnlockVideo.changeAdd(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#215-219)
+callme_re_ent7() should be declared external:
+	- UnlockVideo.callme_re_ent7() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#221-227)
+changeFee(uint8) should be declared external:
+	- UnlockVideo.changeFee(uint8) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#229-233)
+bug_re_ent13() should be declared external:
+	- UnlockVideo.bug_re_ent13() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#235-242)
+changeBonus(uint8) should be declared external:
+	- UnlockVideo.changeBonus(uint8) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#244-248)
+withdrawBalance_re_ent26() should be declared external:
+	- UnlockVideo.withdrawBalance_re_ent26() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#250-258)
+getBalance(address) should be declared external:
+	- UnlockVideo.getBalance(address) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#260-262)
+claimReward_re_ent39() should be declared external:
+	- UnlockVideo.claimReward_re_ent39() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#264-270)
+getDonate(address) should be declared external:
+	- UnlockVideo.getDonate(address) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#272-274)
+bug_re_ent41() should be declared external:
+	- UnlockVideo.bug_re_ent41() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#276-282)
+withdrawEth(uint256) should be declared external:
+	- UnlockVideo.withdrawEth(uint256) (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#284-290)
+callme_re_ent21() should be declared external:
+	- UnlockVideo.callme_re_ent21() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#292-298)
+callme_re_ent14() should be declared external:
+	- UnlockVideo.callme_re_ent14() (buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol#307-313)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external[0m
+INFO:Slither:buggy_0xe69347dda5ab4df9d2cc269c53f515ffc0d40f7f_reentrancy.sol analyzed (3 contracts with 46 detectors), 160 result(s) found
+INFO:Slither:[94mUse https://crytic.io/ to get access to additional detectors and Github integration[0m

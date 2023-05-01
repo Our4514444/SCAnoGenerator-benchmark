@@ -1,0 +1,384 @@
+Compilation warnings/errors on buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:104:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        msg.sender.send(address(this).balance);
+        ^------------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:112:8: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+      {addr.send (42 ether); }
+       ^------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:117:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        winner_unchk22.send(subpot_unchk22);  //bug
+        ^---------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:123:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        winner_unchk10.send(subpot_unchk10);  //bug
+        ^---------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:129:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        winner_unchk34.send(subpot_unchk34);  //bug
+        ^---------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:163:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        dst.send(msg.value);
+        ^-----------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:175:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        winner_unchk20.send(winAmount_unchk20);
+        ^------------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:185:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        winner_unchk46.send(subpot_unchk46);  //bug
+        ^---------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:190:9: Warning: Return value of low-level calls not used.
+        dst.call.value(msg.value)("");
+        ^---------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:196:2: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+	msg.sender.send(Balances_unchk5);}
+	^------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:199:9: Warning: Return value of low-level calls not used.
+        dst.call.value(msg.value)("");
+        ^---------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:236:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        winner_unchk8.send(winAmount_unchk8);
+        ^----------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:244:8: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+      {addr.send (42 ether); }
+       ^------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:258:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        dst.send(msg.value);
+        ^-----------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:293:5: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+    callee.send(5 ether);
+    ^------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:311:8: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+      {addr.send (4 ether); }		
+       ^-----------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:320:2: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+	msg.sender.send(Balances_unchk41);}	
+	^-------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:333:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        msg.sender.send(address(this).balance);
+        ^------------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:340:5: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+    callee.send(5 ether);
+    ^------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:350:5: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+    callee.send(5 ether);
+    ^------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:363:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        winner_unchk32.send(winAmount_unchk32);
+        ^------------------------------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:115:57: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+contract ERC20Detailed is IERC20 {function cash_unchk22(uint roundIndex, uint subpotIndex, address payable winner_unchk22)public{
+                                                        ^-------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:115:74: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+contract ERC20Detailed is IERC20 {function cash_unchk22(uint roundIndex, uint subpotIndex, address payable winner_unchk22)public{
+                                                                         ^--------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:121:45: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	string private _name;function cash_unchk10(uint roundIndex, uint subpotIndex,address payable winner_unchk10) public{
+	                                           ^-------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:121:62: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	string private _name;function cash_unchk10(uint roundIndex, uint subpotIndex,address payable winner_unchk10) public{
+	                                                            ^--------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:127:47: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	string private _symbol;function cash_unchk34(uint roundIndex, uint subpotIndex, address payable winner_unchk34) public{
+	                                             ^-------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:127:64: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	string private _symbol;function cash_unchk34(uint roundIndex, uint subpotIndex, address payable winner_unchk34) public{
+	                                                              ^--------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:183:24: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	function cash_unchk46(uint roundIndex, uint subpotIndex, address payable winner_unchk46) public{
+	                      ^-------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:183:41: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	function cash_unchk46(uint roundIndex, uint subpotIndex, address payable winner_unchk46) public{
+	                                       ^--------------^
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:202:41: Warning: Function state mutability can be restricted to pure
+	string constant tokenSymbol = "yCORIA";function callnotchecked_unchk1(address payable callee) public {
+                                        ^ (Relevant source part starts here and spans across multiple lines).
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:250:1: Warning: Function state mutability can be restricted to pure
+function callnotchecked_unchk37(address payable callee) public {
+^ (Relevant source part starts here and spans across multiple lines).
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:265:1: Warning: Function state mutability can be restricted to pure
+function callnotchecked_unchk25(address payable callee) public {
+^ (Relevant source part starts here and spans across multiple lines).
+buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol:284:1: Warning: Function state mutability can be restricted to pure
+function callnotchecked_unchk13(address callee) public {
+^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:Detectors:[91m
+Context.withdrawLeftOver_unchk45() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#102-105) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.send(address(this).balance) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#104)
+Context.bug_unchk27(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#111-112) sends eth to arbitrary user
+	Dangerous calls:
+	- addr.send(42000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#112)
+ERC20Detailed.cash_unchk22(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#115-119) sends eth to arbitrary user
+	Dangerous calls:
+	- winner_unchk22.send(subpot_unchk22) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#117)
+ERC20Detailed.cash_unchk10(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#121-125) sends eth to arbitrary user
+	Dangerous calls:
+	- winner_unchk10.send(subpot_unchk10) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#123)
+ERC20Detailed.cash_unchk34(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#127-131) sends eth to arbitrary user
+	Dangerous calls:
+	- winner_unchk34.send(subpot_unchk34) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#129)
+yCORIA.cash_unchk46(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#183-187) sends eth to arbitrary user
+	Dangerous calls:
+	- winner_unchk46.send(subpot_unchk46) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#185)
+yCORIA.withdrawBal_unchk5() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#194-196) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.send(Balances_unchk5) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#196)
+yCORIA.bug_unchk3(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#243-244) sends eth to arbitrary user
+	Dangerous calls:
+	- addr.send(42000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#244)
+yCORIA.unhandledsend_unchk26(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#292-294) sends eth to arbitrary user
+	Dangerous calls:
+	- callee.send(5000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#293)
+yCORIA.bug_unchk39(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#310-311) sends eth to arbitrary user
+	Dangerous calls:
+	- addr.send(4000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#311)
+yCORIA.withdrawBal_unchk41() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#318-320) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.send(Balances_unchk41) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#320)
+yCORIA.withdrawLeftOver_unchk21() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#331-334) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.send(address(this).balance) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#333)
+yCORIA.unhandledsend_unchk14(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#339-341) sends eth to arbitrary user
+	Dangerous calls:
+	- callee.send(5000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#340)
+yCORIA.unhandledsend_unchk38(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#349-351) sends eth to arbitrary user
+	Dangerous calls:
+	- callee.send(5000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#350)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations[0m
+INFO:Detectors:[91m
+ERC20Detailed.winner_unchk20 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#170) is never initialized. It is used in:
+	- ERC20Detailed.sendToWinner_unchk20() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#173-177)
+ERC20Detailed.winAmount_unchk20 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#171) is never initialized. It is used in:
+	- ERC20Detailed.sendToWinner_unchk20() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#173-177)
+yCORIA.winner_unchk8 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#231) is never initialized. It is used in:
+	- yCORIA.sendToWinner_unchk8() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#234-238)
+yCORIA.winAmount_unchk8 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#232) is never initialized. It is used in:
+	- yCORIA.sendToWinner_unchk8() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#234-238)
+yCORIA.winner_unchk32 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#358) is never initialized. It is used in:
+	- yCORIA.sendToWinner_unchk32() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#361-365)
+yCORIA.winAmount_unchk32 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#359) is never initialized. It is used in:
+	- yCORIA.sendToWinner_unchk32() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#361-365)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables[0m
+INFO:Detectors:[93m
+yCORIA.my_func_uncheck48(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#189-191) ignores return value by dst.call.value(msg.value)() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#190)
+yCORIA.my_func_uncheck36(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#198-200) ignores return value by dst.call.value(msg.value)() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#199)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls[0m
+INFO:Detectors:[93m
+Context.withdrawLeftOver_unchk45() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#102-105) ignores return value by msg.sender.send(address(this).balance) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#104)
+Context.bug_unchk27(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#111-112) ignores return value by addr.send(42000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#112)
+ERC20Detailed.cash_unchk22(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#115-119) ignores return value by winner_unchk22.send(subpot_unchk22) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#117)
+ERC20Detailed.cash_unchk10(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#121-125) ignores return value by winner_unchk10.send(subpot_unchk10) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#123)
+ERC20Detailed.cash_unchk34(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#127-131) ignores return value by winner_unchk34.send(subpot_unchk34) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#129)
+ERC20Detailed.my_func_unchk35(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#162-164) ignores return value by dst.send(msg.value) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#163)
+ERC20Detailed.sendToWinner_unchk20() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#173-177) ignores return value by winner_unchk20.send(winAmount_unchk20) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#175)
+yCORIA.cash_unchk46(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#183-187) ignores return value by winner_unchk46.send(subpot_unchk46) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#185)
+yCORIA.withdrawBal_unchk5() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#194-196) ignores return value by msg.sender.send(Balances_unchk5) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#196)
+yCORIA.sendToWinner_unchk8() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#234-238) ignores return value by winner_unchk8.send(winAmount_unchk8) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#236)
+yCORIA.bug_unchk3(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#243-244) ignores return value by addr.send(42000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#244)
+yCORIA.my_func_unchk23(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#257-259) ignores return value by dst.send(msg.value) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#258)
+yCORIA.unhandledsend_unchk26(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#292-294) ignores return value by callee.send(5000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#293)
+yCORIA.bug_unchk39(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#310-311) ignores return value by addr.send(4000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#311)
+yCORIA.withdrawBal_unchk41() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#318-320) ignores return value by msg.sender.send(Balances_unchk41) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#320)
+yCORIA.withdrawLeftOver_unchk21() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#331-334) ignores return value by msg.sender.send(address(this).balance) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#333)
+yCORIA.unhandledsend_unchk14(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#339-341) ignores return value by callee.send(5000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#340)
+yCORIA.unhandledsend_unchk38(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#349-351) ignores return value by callee.send(5000000000000000000) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#350)
+yCORIA.sendToWinner_unchk32() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#361-365) ignores return value by winner_unchk32.send(winAmount_unchk32) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#363)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-send[0m
+INFO:Detectors:[93m
+yCORIA.bug_unchk7().addr_unchk7 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#275) is a local variable never initialized
+yCORIA.bug_unchk18().addr_unchk18 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#220) is a local variable never initialized
+yCORIA.bug_unchk43().addr_unchk43 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#208) is a local variable never initialized
+Context.bug_unchk30().receivers_unchk30 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#88) is a local variable never initialized
+Context.bug_unchk30().addr_unchk30 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#89) is a local variable never initialized
+ERC20Detailed.UncheckedExternalCall_unchk4().addr_unchk4 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#150) is a local variable never initialized
+yCORIA.bug_unchk18().receivers_unchk18 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#219) is a local variable never initialized
+ERC20Detailed.bug_unchk19().addr_unchk19 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#141) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables[0m
+INFO:Detectors:[92m
+ERC20Detailed.constructor(string,string,uint8).name (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#135) shadows:
+	- ERC20Detailed.name() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#146-148) (function)
+ERC20Detailed.constructor(string,string,uint8).symbol (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#135) shadows:
+	- ERC20Detailed.symbol() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#159-161) (function)
+ERC20Detailed.constructor(string,string,uint8).decimals (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#135) shadows:
+	- ERC20Detailed.decimals() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#166-168) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing[0m
+INFO:Detectors:[92m
+Address.isContract(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#64-70) uses assembly
+	- INLINE ASM (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#68)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage[0m
+INFO:Detectors:[92m
+Low level call in Address.sendValue(address,uint256) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#76-82):
+	- (success) = recipient.call.value(amount)() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#80)
+Low level call in yCORIA.my_func_uncheck48(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#189-191):
+	- dst.call.value(msg.value)() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#190)
+Low level call in yCORIA.my_func_uncheck36(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#198-200):
+	- dst.call.value(msg.value)() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#199)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls[0m
+INFO:Detectors:[92m
+Function Context.bug_unchk30() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#87-94) is not in mixedCase
+Function Context.withdrawLeftOver_unchk45() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#102-105) is not in mixedCase
+Function Context.bug_unchk27(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#111-112) is not in mixedCase
+Variable Context.payedOut_unchk45 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#100) is not in mixedCase
+Function ERC20Detailed.cash_unchk22(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#115-119) is not in mixedCase
+Parameter ERC20Detailed.cash_unchk22(uint256,uint256,address).winner_unchk22 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#115) is not in mixedCase
+Function ERC20Detailed.cash_unchk10(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#121-125) is not in mixedCase
+Parameter ERC20Detailed.cash_unchk10(uint256,uint256,address).winner_unchk10 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#121) is not in mixedCase
+Function ERC20Detailed.cash_unchk34(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#127-131) is not in mixedCase
+Parameter ERC20Detailed.cash_unchk34(uint256,uint256,address).winner_unchk34 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#127) is not in mixedCase
+Function ERC20Detailed.bug_unchk19() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#140-144) is not in mixedCase
+Function ERC20Detailed.UncheckedExternalCall_unchk4() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#149-157) is not in mixedCase
+Function ERC20Detailed.my_func_unchk35(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#162-164) is not in mixedCase
+Function ERC20Detailed.sendToWinner_unchk20() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#173-177) is not in mixedCase
+Variable ERC20Detailed.payedOut_unchk20 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#169) is not in mixedCase
+Variable ERC20Detailed.winner_unchk20 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#170) is not in mixedCase
+Variable ERC20Detailed.winAmount_unchk20 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#171) is not in mixedCase
+Contract yCORIA (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#180-367) is not in CapWords
+Function yCORIA.cash_unchk46(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#183-187) is not in mixedCase
+Parameter yCORIA.cash_unchk46(uint256,uint256,address).winner_unchk46 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#183) is not in mixedCase
+Function yCORIA.my_func_uncheck48(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#189-191) is not in mixedCase
+Function yCORIA.withdrawBal_unchk5() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#194-196) is not in mixedCase
+Function yCORIA.my_func_uncheck36(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#198-200) is not in mixedCase
+Function yCORIA.callnotchecked_unchk1(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#202-204) is not in mixedCase
+Function yCORIA.bug_unchk43() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#207-211) is not in mixedCase
+Function yCORIA.bug_unchk18() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#218-225) is not in mixedCase
+Function yCORIA.sendToWinner_unchk8() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#234-238) is not in mixedCase
+Function yCORIA.bug_unchk3(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#243-244) is not in mixedCase
+Function yCORIA.callnotchecked_unchk37(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#250-252) is not in mixedCase
+Function yCORIA.my_func_unchk23(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#257-259) is not in mixedCase
+Function yCORIA.callnotchecked_unchk25(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#265-267) is not in mixedCase
+Function yCORIA.bug_unchk7() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#274-278) is not in mixedCase
+Function yCORIA.callnotchecked_unchk13(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#284-286) is not in mixedCase
+Function yCORIA.unhandledsend_unchk26(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#292-294) is not in mixedCase
+Function yCORIA.bug_unchk39(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#310-311) is not in mixedCase
+Function yCORIA.withdrawBal_unchk41() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#318-320) is not in mixedCase
+Function yCORIA.withdrawLeftOver_unchk21() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#331-334) is not in mixedCase
+Function yCORIA.unhandledsend_unchk14(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#339-341) is not in mixedCase
+Function yCORIA.unhandledsend_unchk38(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#349-351) is not in mixedCase
+Function yCORIA.sendToWinner_unchk32() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#361-365) is not in mixedCase
+Constant yCORIA.tokenName (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#198) is not in UPPER_CASE_WITH_UNDERSCORES
+Constant yCORIA.tokenSymbol (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#202) is not in UPPER_CASE_WITH_UNDERSCORES
+Constant yCORIA.tokenDecimals (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#206) is not in UPPER_CASE_WITH_UNDERSCORES
+Variable yCORIA.payedOut_unchk8 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#230) is not in mixedCase
+Variable yCORIA.winner_unchk8 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#231) is not in mixedCase
+Variable yCORIA.winAmount_unchk8 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#232) is not in mixedCase
+Variable yCORIA.payedOut_unchk21 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#329) is not in mixedCase
+Variable yCORIA.payedOut_unchk32 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#357) is not in mixedCase
+Variable yCORIA.winner_unchk32 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#358) is not in mixedCase
+Variable yCORIA.winAmount_unchk32 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#359) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+Reentrancy in ERC20Detailed.sendToWinner_unchk20() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#173-177):
+	External calls:
+	- winner_unchk20.send(winAmount_unchk20) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#175)
+	State variables written after the call(s):
+	- payedOut_unchk20 = true (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#176)
+Reentrancy in yCORIA.sendToWinner_unchk32() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#361-365):
+	External calls:
+	- winner_unchk32.send(winAmount_unchk32) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#363)
+	State variables written after the call(s):
+	- payedOut_unchk32 = true (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#364)
+Reentrancy in yCORIA.sendToWinner_unchk8() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#234-238):
+	External calls:
+	- winner_unchk8.send(winAmount_unchk8) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#236)
+	State variables written after the call(s):
+	- payedOut_unchk8 = true (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#237)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4[0m
+INFO:Detectors:[92m
+Context.payedOut_unchk45 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#100) should be constant
+ERC20Detailed.winAmount_unchk20 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#171) should be constant
+ERC20Detailed.winner_unchk20 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#170) should be constant
+yCORIA.basePercent (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#213) should be constant
+yCORIA.payedOut_unchk21 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#329) should be constant
+yCORIA.winAmount_unchk32 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#359) should be constant
+yCORIA.winAmount_unchk8 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#232) should be constant
+yCORIA.winner_unchk32 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#358) should be constant
+yCORIA.winner_unchk8 (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#231) should be constant
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant[0m
+INFO:Detectors:[92m
+bug_unchk30() should be declared external:
+	- Context.bug_unchk30() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#87-94)
+withdrawLeftOver_unchk45() should be declared external:
+	- Context.withdrawLeftOver_unchk45() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#102-105)
+bug_unchk27(address) should be declared external:
+	- Context.bug_unchk27(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#111-112)
+cash_unchk22(uint256,uint256,address) should be declared external:
+	- ERC20Detailed.cash_unchk22(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#115-119)
+cash_unchk10(uint256,uint256,address) should be declared external:
+	- ERC20Detailed.cash_unchk10(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#121-125)
+cash_unchk34(uint256,uint256,address) should be declared external:
+	- ERC20Detailed.cash_unchk34(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#127-131)
+bug_unchk19() should be declared external:
+	- ERC20Detailed.bug_unchk19() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#140-144)
+name() should be declared external:
+	- ERC20Detailed.name() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#146-148)
+UncheckedExternalCall_unchk4() should be declared external:
+	- ERC20Detailed.UncheckedExternalCall_unchk4() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#149-157)
+symbol() should be declared external:
+	- ERC20Detailed.symbol() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#159-161)
+my_func_unchk35(address) should be declared external:
+	- ERC20Detailed.my_func_unchk35(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#162-164)
+decimals() should be declared external:
+	- ERC20Detailed.decimals() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#166-168)
+sendToWinner_unchk20() should be declared external:
+	- ERC20Detailed.sendToWinner_unchk20() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#173-177)
+cash_unchk46(uint256,uint256,address) should be declared external:
+	- yCORIA.cash_unchk46(uint256,uint256,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#183-187)
+my_func_uncheck48(address) should be declared external:
+	- yCORIA.my_func_uncheck48(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#189-191)
+withdrawBal_unchk5() should be declared external:
+	- yCORIA.withdrawBal_unchk5() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#194-196)
+my_func_uncheck36(address) should be declared external:
+	- yCORIA.my_func_uncheck36(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#198-200)
+callnotchecked_unchk1(address) should be declared external:
+	- yCORIA.callnotchecked_unchk1(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#202-204)
+bug_unchk43() should be declared external:
+	- yCORIA.bug_unchk43() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#207-211)
+bug_unchk18() should be declared external:
+	- yCORIA.bug_unchk18() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#218-225)
+totalSupply() should be declared external:
+	- yCORIA.totalSupply() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#227-229)
+sendToWinner_unchk8() should be declared external:
+	- yCORIA.sendToWinner_unchk8() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#234-238)
+balanceOf(address) should be declared external:
+	- yCORIA.balanceOf(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#240-242)
+bug_unchk3(address) should be declared external:
+	- yCORIA.bug_unchk3(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#243-244)
+transfer(address,uint256) should be declared external:
+	- yCORIA.transfer(address,uint256) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#246-249)
+callnotchecked_unchk37(address) should be declared external:
+	- yCORIA.callnotchecked_unchk37(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#250-252)
+allowance(address,address) should be declared external:
+	- yCORIA.allowance(address,address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#254-256)
+my_func_unchk23(address) should be declared external:
+	- yCORIA.my_func_unchk23(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#257-259)
+approve(address,uint256) should be declared external:
+	- yCORIA.approve(address,uint256) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#261-264)
+callnotchecked_unchk25(address) should be declared external:
+	- yCORIA.callnotchecked_unchk25(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#265-267)
+transferFrom(address,address,uint256) should be declared external:
+	- yCORIA.transferFrom(address,address,uint256) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#269-273)
+bug_unchk7() should be declared external:
+	- yCORIA.bug_unchk7() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#274-278)
+increaseAllowance(address,uint256) should be declared external:
+	- yCORIA.increaseAllowance(address,uint256) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#280-283)
+callnotchecked_unchk13(address) should be declared external:
+	- yCORIA.callnotchecked_unchk13(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#284-286)
+decreaseAllowance(address,uint256) should be declared external:
+	- yCORIA.decreaseAllowance(address,uint256) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#288-291)
+unhandledsend_unchk26(address) should be declared external:
+	- yCORIA.unhandledsend_unchk26(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#292-294)
+bug_unchk39(address) should be declared external:
+	- yCORIA.bug_unchk39(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#310-311)
+withdrawBal_unchk41() should be declared external:
+	- yCORIA.withdrawBal_unchk41() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#318-320)
+withdrawLeftOver_unchk21() should be declared external:
+	- yCORIA.withdrawLeftOver_unchk21() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#331-334)
+burn(uint256) should be declared external:
+	- yCORIA.burn(uint256) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#336-338)
+unhandledsend_unchk14(address) should be declared external:
+	- yCORIA.unhandledsend_unchk14(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#339-341)
+unhandledsend_unchk38(address) should be declared external:
+	- yCORIA.unhandledsend_unchk38(address) (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#349-351)
+sendToWinner_unchk32() should be declared external:
+	- yCORIA.sendToWinner_unchk32() (buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol#361-365)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external[0m
+INFO:Slither:buggy_0x863ab530424098d484c410f683ff57ebce26cc92.sol analyzed (6 contracts with 46 detectors), 161 result(s) found
+INFO:Slither:[94mUse https://crytic.io/ to get access to additional detectors and Github integration[0m

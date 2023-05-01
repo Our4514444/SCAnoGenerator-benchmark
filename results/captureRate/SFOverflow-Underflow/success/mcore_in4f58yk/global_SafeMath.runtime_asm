@@ -1,0 +1,20 @@
+    0: PUSH20 0x0
+   15: ADDRESS
+   16: EQ
+   17: PUSH1 0x80
+   19: PUSH1 0x40
+   1b: MSTORE
+   1c: PUSH1 0x0
+   1e: DUP1
+   1f: REVERT
+   20: INVALID
+   21: LOG2
+   22: PUSH6 0x627a7a723158
+   29: SHA3
+   2a: INVALID
+   2b: CALLDATACOPY
+   2c: SDIV
+   2d: INVALID
+   2e: INVALID
+   2f: INVALID
+   30: PUSH14 0x11ff9aa1b2ab08e620ec575a47e7

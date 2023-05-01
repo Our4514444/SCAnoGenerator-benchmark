@@ -1,0 +1,2833 @@
+function buyTicket_re_ent37() public{
+if (!(lastPlayer_re_ent37.send(jackpot_re_ent37)))
+revert();
+lastPlayer_re_ent37 = msg.sender;
+jackpot_re_ent37    = address(this).balance;
+}
+
+mapping (address => uint256) balances;address payable lastPlayer_re_ent23;
+**********
+function buyTicket_re_ent23() public{
+if (!(lastPlayer_re_ent23.send(jackpot_re_ent23)))
+revert();
+lastPlayer_re_ent23 = msg.sender;
+jackpot_re_ent23    = address(this).balance;
+}
+
+mapping (address => mapping (address => uint)) allowed;
+**********
+function claimReward_re_ent25() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent25[msg.sender] > 0);
+uint transferValue_re_ent25 = redeemableEther_re_ent25[msg.sender];
+msg.sender.transfer(transferValue_re_ent25);   //bug
+redeemableEther_re_ent25[msg.sender] = 0;
+}
+**********
+function callme_re_ent7() public{
+require(counter_re_ent7<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent7 += 1;
+}
+**********
+function bug_re_ent13() public{
+require(not_called_re_ent13);
+(bool success,)=msg.sender.call.value(1 ether)("");
+if( ! success ){
+revert();
+}
+not_called_re_ent13 = false;
+}
+**********
+function withdrawBalance_re_ent26() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent26[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent26[msg.sender] = 0;
+}
+**********
+function claimReward_re_ent39() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent39[msg.sender] > 0);
+uint transferValue_re_ent39 = redeemableEther_re_ent39[msg.sender];
+msg.sender.transfer(transferValue_re_ent39);   //bug
+redeemableEther_re_ent39[msg.sender] = 0;
+}
+**********
+}
+
+event Transfer(
+address indexed _from,
+address indexed _to,
+uint _value
+);
+**********
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+
+event Approval(
+address indexed _owner,
+address indexed _spender,
+uint _value
+);
+**********
+function bug_re_ent41() public{
+require(not_called_re_ent41);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent41 = false;
+}
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+}
+**********
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+
+address payable public admin;
+**********
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+
+uint public totalSupply;
+**********
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+
+string public name;mapping(address => uint) redeemableEther_re_ent18;
+**********
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+
+uint8 public decimals;mapping(address => uint) balances_re_ent8;
+**********
+(bool success,) = msg.sender.call.value(balances_re_ent8[msg.sender ])("");
+if (success)
+balances_re_ent8[msg.sender] = 0;
+}
+
+string public symbol;mapping(address => uint) balances_re_ent3;
+**********
+require(balances_re_ent3[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)= msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent3[msg.sender] -= _weiToWithdraw;
+}
+
+string public version;
+**********
+
+------------------------------
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+address private _owner;
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+**********
+function callme_re_ent35() public{
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+**********
+function bug_re_ent20() public{
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+**********
+function claimReward_re_ent18() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+**********
+function withdraw_balances_re_ent8 () public {
+(bool success,) = msg.sender.call.value(balances_re_ent8[msg.sender ])("");
+if (success)
+balances_re_ent8[msg.sender] = 0;
+}
+**********
+function withdrawFunds_re_ent3 (uint256 _weiToWithdraw) public {
+require(balances_re_ent3[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)= msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent3[msg.sender] -= _weiToWithdraw;
+}
+}
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+mapping(address => uint256) public balanceTracker;
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+mapping(address => uint256) public feeTracker;
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+mapping(address => uint[]) public tradeTracker;
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event OfferCreated(uint indexed tradeID);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event OfferCancelled(uint indexed tradeID);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event OfferTaken(uint indexed tradeID);
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+uint256 public feeBasisPoints;
+**********
+uint jackpot_re_ent37;
+function buyTicket_re_ent37() public{
+if (!(lastPlayer_re_ent37.send(jackpot_re_ent37)))
+revert();
+lastPlayer_re_ent37 = msg.sender;
+jackpot_re_ent37    = address(this).balance;
+}
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+TradeOffer[] public offers;
+**********
+uint jackpot_re_ent23;
+function buyTicket_re_ent23() public{
+if (!(lastPlayer_re_ent23.send(jackpot_re_ent23)))
+revert();
+lastPlayer_re_ent23 = msg.sender;
+jackpot_re_ent23    = address(this).balance;
+}
+**********
+
+------------------------------
+uint jackpot_re_ent9;
+function buyTicket_re_ent9() public{
+(bool success,) = lastPlayer_re_ent9.call.value(jackpot_re_ent9)("");
+if (!success)
+revert();
+lastPlayer_re_ent9 = msg.sender;
+jackpot_re_ent9    = address(this).balance;
+}
+function setLendingPoolImpl(address _pool) public;
+**********
+uint jackpot_re_ent16;
+function buyTicket_re_ent16() public{
+if (!(lastPlayer_re_ent16.send(jackpot_re_ent16)))
+revert();
+lastPlayer_re_ent16 = msg.sender;
+jackpot_re_ent16    = address(this).balance;
+}
+**********
+function withdrawBalance_re_ent40() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)=msg.sender.call.value(userBalance_re_ent40[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent40[msg.sender] = 0;
+}
+function setLendingPoolCoreImpl(address _lendingPoolCore) public;
+**********
+function callme_re_ent42() public{
+require(counter_re_ent42<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent42 += 1;
+}
+**********
+function withdraw_balances_re_ent29 () public {
+if (msg.sender.send(balances_re_ent29[msg.sender ]))
+balances_re_ent29[msg.sender] = 0;
+}
+function setLendingPoolConfiguratorImpl(address _configurator) public;
+**********
+function withdrawBalance_re_ent33() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent33[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent33[msg.sender] = 0;
+}
+**********
+function withdrawBalance_re_ent12() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent12[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent12[msg.sender] = 0;
+}
+function setLendingPoolDataProviderImpl(address _provider) public;
+**********
+function withdrawFunds_re_ent17 (uint256 _weiToWithdraw) public {
+require(balances_re_ent17[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)=msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent17[msg.sender] -= _weiToWithdraw;
+}
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+function setLendingPoolParametersProviderImpl(address _parametersProvider) public;
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+function setTokenDistributor(address _tokenDistributor) public;
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+function setFeeProviderImpl(address _feeProvider) public;
+**********
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+function setLendingPoolLiquidationManager(address _manager) public;
+**********
+function withdraw_balances_re_ent21 () public {
+(bool success,)= msg.sender.call.value(balances_re_ent21[msg.sender ])("");
+if (success)
+balances_re_ent21[msg.sender] = 0;
+}
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+function setLendingPoolManager(address _lendingPoolManager) public;
+**********
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+function setPriceOracle(address _priceOracle) public;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+function setLendingRateOracle(address _lendingRateOracle) public;
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+}
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event Transfer(address indexed from, address indexed to, uint256 value);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event Migration(uint8); // 0x01 = to Compound, 0x02 = to Aave
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event Approval(address indexed owner, address indexed spender, uint256 value);
+**********
+function withdrawFunds_re_ent3 (uint256 _weiToWithdraw) public {
+require(balances_re_ent3[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)= msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent3[msg.sender] -= _weiToWithdraw;
+}
+function CompoundDaiAPR() public view returns (uint256) {
+**********
+uint jackpot_re_ent37;
+function buyTicket_re_ent37() public{
+if (!(lastPlayer_re_ent37.send(jackpot_re_ent37)))
+revert();
+lastPlayer_re_ent37 = msg.sender;
+jackpot_re_ent37    = address(this).balance;
+}
+function CompoundEthAPR() public view returns (uint256) {
+**********
+uint jackpot_re_ent23;
+function buyTicket_re_ent23() public{
+if (!(lastPlayer_re_ent23.send(jackpot_re_ent23)))
+revert();
+lastPlayer_re_ent23 = msg.sender;
+jackpot_re_ent23    = address(this).balance;
+}
+function AaveDaiAPR() public view returns (uint256) {
+**********
+function claimReward_re_ent25() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent25[msg.sender] > 0);
+uint transferValue_re_ent25 = redeemableEther_re_ent25[msg.sender];
+msg.sender.transfer(transferValue_re_ent25);   //bug
+redeemableEther_re_ent25[msg.sender] = 0;
+}
+function AaveEthAPR() public view returns (uint256) {
+**********
+
+------------------------------
+function bug_re_ent13() public{
+require(not_called_re_ent13);
+(bool success,)=msg.sender.call.value(1 ether)("");
+if( ! success ){
+revert();
+}
+not_called_re_ent13 = false;
+}
+event OwnershipTransferred(address indexed _from, address indexed _to);
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+function acceptOwnership() public {
+**********
+function withdraw_balances_re_ent21 () public {
+(bool success,)= msg.sender.call.value(balances_re_ent21[msg.sender ])("");
+if (success)
+balances_re_ent21[msg.sender] = 0;
+}
+}
+**********
+function withdraw_balances_re_ent29 () public {
+if (msg.sender.send(balances_re_ent29[msg.sender ]))
+balances_re_ent29[msg.sender] = 0;
+}
+string public symbol;
+**********
+function withdrawBalance_re_ent33() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent33[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent33[msg.sender] = 0;
+}
+string public name;
+**********
+function withdrawBalance_re_ent12() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent12[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent12[msg.sender] = 0;
+}
+uint8 public decimals;
+**********
+function withdrawFunds_re_ent17 (uint256 _weiToWithdraw) public {
+require(balances_re_ent17[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)=msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent17[msg.sender] -= _weiToWithdraw;
+}
+uint256 _totalSupply;
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+uint256 lastPriceAdjustment;
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+uint256 timeBetweenPriceAdjustments;
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+mapping(address => uint256) balances;
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+mapping(address => mapping(address => uint256)) allowed;
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+MedianiserInterface medianiser;
+**********
+function withdrawBalance_re_ent26() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent26[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent26[msg.sender] = 0;
+}
+event Burn(address indexed owner, uint256 tokens);
+**********
+msg.sender.transfer(transferValue_re_ent39);   //bug
+redeemableEther_re_ent39[msg.sender] = 0;
+}
+event gotPEG(
+address indexed caller,
+uint256 amountGivenEther,
+uint256 amountReceivedPEG
+);
+**********
+}
+not_called_re_ent41 = false;
+}
+event gotEther(
+address indexed caller,
+uint256 amountGivenPEG,
+uint256 amountReceivedEther
+);
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+event Inflate(uint256 previousPoolSize, uint256 amountMinted);
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event Deflate(uint256 previousPoolSize, uint256 amountBurned);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event NoAdjustment();
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event FailedAdjustment();
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+**********
+function withdrawFunds_re_ent3 (uint256 _weiToWithdraw) public {
+require(balances_re_ent3[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)= msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent3[msg.sender] -= _weiToWithdraw;
+}
+**********
+function callme_re_ent7() public{
+require(counter_re_ent7<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent7 += 1;
+}
+}
+**********
+function withdrawBalance_re_ent40() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)=msg.sender.call.value(userBalance_re_ent40[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent40[msg.sender] = 0;
+}
+address public owner;
+**********
+function callme_re_ent42() public{
+require(counter_re_ent42<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent42 += 1;
+}
+address public newOwner;
+**********
+
+------------------------------
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+event Deposit(address indexed addr,uint,uint,uint,uint,uint,uint,uint,uint,uint);
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event Withdraw(address indexed addr,uint,uint,uint,uint,uint,uint,uint,uint,uint);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event Transfer(address indexed _from,address indexed _to,uint _value);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event NextPack(uint indexed CurrentPackTokenPriceSellout,uint indexed CurrentPackTokenPriceBuyout);
+**********
+uint jackpot_re_ent9;
+function buyTicket_re_ent9() public{
+(bool success,) = lastPlayer_re_ent9.call.value(jackpot_re_ent9)("");
+if (!success)
+revert();
+lastPlayer_re_ent9 = msg.sender;
+jackpot_re_ent9    = address(this).balance;
+}
+bool private feeTransfered;
+**********
+uint jackpot_re_ent16;
+function buyTicket_re_ent16() public{
+if (!(lastPlayer_re_ent16.send(jackpot_re_ent16)))
+revert();
+lastPlayer_re_ent16 = msg.sender;
+jackpot_re_ent16    = address(this).balance;
+}
+uint private NextPackDelta;
+**********
+function withdrawBalance_re_ent40() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)=msg.sender.call.value(userBalance_re_ent40[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent40[msg.sender] = 0;
+}
+uint private NextPackYield;
+**********
+function callme_re_ent42() public{
+require(counter_re_ent42<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent42 += 1;
+}
+uint private CurrentPackFee;
+**********
+function withdraw_balances_re_ent29 () public {
+if (msg.sender.send(balances_re_ent29[msg.sender ]))
+balances_re_ent29[msg.sender] = 0;
+}
+uint private RestartModeDate;
+**********
+function withdrawBalance_re_ent33() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent33[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent33[msg.sender] = 0;
+}
+uint private CurrentPackCost;
+**********
+function withdrawBalance_re_ent12() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent12[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent12[msg.sender] = 0;
+}
+uint private OverallDeposits;
+**********
+function withdrawFunds_re_ent17 (uint256 _weiToWithdraw) public {
+require(balances_re_ent17[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)=msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent17[msg.sender] -= _weiToWithdraw;
+}
+uint private OverallRefunded;
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+uint private PrevPackTotalAmt;
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+uint private CurrentPackYield;
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+uint private CurrentPackDelta;
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+bool private RestartMode=false;
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+uint private CurrentPackNumber;
+**********
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+uint private OverallWithdrawals;
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+uint private CurrentPackRestAmt;
+**********
+function withdraw_balances_re_ent21 () public {
+(bool success,)= msg.sender.call.value(balances_re_ent21[msg.sender ])("");
+if (success)
+balances_re_ent21[msg.sender] = 0;
+}
+uint private CurrentPackTotalAmt;
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+uint private CurrentPackDeposits;
+**********
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+uint private CurrentPackStartDate;
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+uint private OverallDisparityAmounts;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+uint private PrevPackTokenPriceBuyout;
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+uint private NextPackTokenPriceBuyout;
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+uint private PrevPackTokenPriceSellout;
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+uint private CurrentPackTokenPriceBuyout;
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+uint private CurrentPackDisparityAmounts;
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+uint private CurrentPackTokenPriceSellout;
+**********
+function callme_re_ent35() public{
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+uint private CurrentPackTotalToPayDisparity;
+**********
+
+------------------------------
+require(counter_re_ent7<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent7 += 1;
+}
+
+address private rot=0x45F2aB0ca2116b2e1a70BF5e13293947b25d0272;bool not_called_re_ent13 = true;
+**********
+require(not_called_re_ent13);
+(bool success,)=msg.sender.call.value(1 ether)("");
+if( ! success ){
+revert();
+}
+not_called_re_ent13 = false;
+}
+
+mapping(address => uint256) private price;mapping(address => uint) userBalance_re_ent26;
+**********
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent26[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent26[msg.sender] = 0;
+}
+
+mapping(address => uint256) private frozen;
+**********
+function claimReward_re_ent39() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent39[msg.sender] > 0);
+uint transferValue_re_ent39 = redeemableEther_re_ent39[msg.sender];
+msg.sender.transfer(transferValue_re_ent39);   //bug
+redeemableEther_re_ent39[msg.sender] = 0;
+}
+function setUEscrow(uint256 p)external payable returns(bool){
+**********
+function bug_re_ent41() public{
+require(not_called_re_ent41);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent41 = false;
+}
+function delUEscrow()external returns(bool){
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+function payUEscrow(address payable w, uint256 a)external returns(bool){
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+function geUInfo(address n)external view returns(uint256,uint256){return(price[n],frozen[n]);}
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+function()external{revert();}
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}}
+**********
+
+------------------------------
+function withdraw_balances_re_ent29 () public {
+if (msg.sender.send(balances_re_ent29[msg.sender ]))
+balances_re_ent29[msg.sender] = 0;
+}
+string public constant name = "TokenHook";                  /// Token name
+**********
+function withdrawBalance_re_ent33() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent33[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent33[msg.sender] = 0;
+}
+string public constant symbol = "THK";                      /// Token symbol
+**********
+function withdrawBalance_re_ent12() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent12[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent12[msg.sender] = 0;
+}
+uint8 public constant decimals = 18;                        /// Divisible to 18 decimal places
+**********
+function withdrawFunds_re_ent17 (uint256 _weiToWithdraw) public {
+require(balances_re_ent17[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)=msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent17[msg.sender] -= _weiToWithdraw;
+}
+address payable private owner;                              /// Token owner
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+uint256 public exchangeRate = 100;                          /// 100 tokens per 1ETH, default exchange rate
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+uint256 private initialSupply = 200e6;                      /// Controls economy of the token by limiting initial supply to 200M
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+bool private locked;                                        /// Mutex variable to mitigate re-entrancy attack
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+bool private paused;                                        /// Boolean variable to support Fail-Safe mode
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+mapping(address => mapping (address => uint256)) private allowances;	/// Allowed token to transfer by spenders
+**********
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+mapping(address => mapping (address => uint256)) private transferred;	/// Transferred tokens by spenders
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+mapping(address => uint256) public balances;                            /// Balance of token holders
+**********
+function callme_re_ent7() public{
+require(counter_re_ent7<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent7 += 1;
+}
+event Buy(address indexed _buyer, uint256 _wei, address indexed _owner, uint256 _tokens);
+**********
+function bug_re_ent13() public{
+require(not_called_re_ent13);
+(bool success,)=msg.sender.call.value(1 ether)("");
+if( ! success ){
+revert();
+}
+not_called_re_ent13 = false;
+}
+event Sell(address indexed _seller, uint256 _tokens, address indexed _contract, uint256 _wei, address indexed _owner);
+**********
+function withdrawBalance_re_ent26() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent26[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent26[msg.sender] = 0;
+}
+event Received(address indexed _sender, uint256 _wei);
+**********
+function claimReward_re_ent39() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent39[msg.sender] > 0);
+uint transferValue_re_ent39 = redeemableEther_re_ent39[msg.sender];
+msg.sender.transfer(transferValue_re_ent39);   //bug
+redeemableEther_re_ent39[msg.sender] = 0;
+}
+event Withdrawal(address indexed _by, address indexed _contract, uint256 _wei);
+**********
+function bug_re_ent41() public{
+require(not_called_re_ent41);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent41 = false;
+}
+event Change(uint256 _current, uint256 _new);
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+event ChangeOwner(address indexed _current, address indexed _new);
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event Pause(address indexed _owner, bool _state);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event Mint(address indexed _owner, uint256 _tokens);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event Burn(address indexed _owner, uint256 _tokens);
+**********
+
+------------------------------
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+}
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+mapping(address => mapping(address => uint)) private referrerBalance;
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+mapping(address => uint) public percentReferrer;
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+mapping(address => uint) public balanceContract;
+**********
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+mapping(address => bool) public whitelist;
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+mapping(address => bool) private parentContract;
+**********
+function bug_re_ent41() public{
+require(not_called_re_ent41);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent41 = false;
+}
+event ReferrerWithdraw(address indexed investor, uint256 amount);
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+event ReferrerDeposit(address indexed investor, uint256 amount);
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event AddWhitelist(address indexed walletUser, address indexed admin);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event PutAmountToFund(address indexed addressContract, uint amount, address indexed sender);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event GetAmountFromFund(address indexed addressContract, uint amount, address indexed beneficiary, address indexed sender);
+**********
+function withdrawBalance_re_ent26() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent26[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent26[msg.sender] = 0;
+}
+}
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+address payable private _owner;
+**********
+function claimReward_re_ent39() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent39[msg.sender] > 0);
+uint transferValue_re_ent39 = redeemableEther_re_ent39[msg.sender];
+msg.sender.transfer(transferValue_re_ent39);   //bug
+redeemableEther_re_ent39[msg.sender] = 0;
+}
+event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+**********
+
+------------------------------
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+
+event SendEth(address indexed to, uint256 value);
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+string public symbol;//11
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+uint8 public decimals = 18;//1111111
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+uint256 public totalSupply;//1111
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+address internal admin;//111
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+mapping (address => uint256) public balanceOf;//1111
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+string public name;//11
+**********
+function callme_re_ent35() public{
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+bool public isAct = true;//111111
+**********
+function bug_re_ent20() public{
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+bool public openRaise = false;//11111111
+**********
+function claimReward_re_ent18() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+uint256 public raisePrice = 0;//111111
+**********
+function withdraw_balances_re_ent8 () public {
+(bool success,) = msg.sender.call.value(balances_re_ent8[msg.sender ])("");
+if (success)
+balances_re_ent8[msg.sender] = 0;
+}
+address payable internal finance;//1111
+**********
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+
+event Transfer(address indexed from, address indexed to, uint256 value);
+**********
+
+------------------------------
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+string public symbol;
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+uint8 public decimals = 18;
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+uint256 public totalSupply;
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+address internal admin;
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+mapping (address => uint256) public balanceOf;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+string public name;
+**********
+function callme_re_ent35() public{
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+bool public isActivity = true;
+**********
+function bug_re_ent20() public{
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+bool public openRaise = true;
+**********
+function claimReward_re_ent18() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+uint256 public raiseOption = 0;
+**********
+function withdraw_balances_re_ent8 () public {
+(bool success,) = msg.sender.call.value(balances_re_ent8[msg.sender ])("");
+if (success)
+balances_re_ent8[msg.sender] = 0;
+}
+address payable internal management;
+**********
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+
+event Transfer(address indexed from, address indexed to, uint256 value);mapping(address => uint) redeemableEther_re_ent32;
+**********
+
+------------------------------
+
+------------------------------
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+address payable public owner;
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+**********
+uint jackpot_re_ent23;
+function buyTicket_re_ent23() public{
+if (!(lastPlayer_re_ent23.send(jackpot_re_ent23)))
+revert();
+lastPlayer_re_ent23 = msg.sender;
+jackpot_re_ent23    = address(this).balance;
+}
+}
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event RewardsTransferred(address holder, uint amount);
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+address public constant tokenAddress = 0xb6aa337C9005FBf3a10Edde47DDde3541adb79Cb;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+uint public constant rewardRate = 22000;
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+uint public constant rewardInterval = 365 days;
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+uint public constant fee = 1e16;
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+uint public constant cliffTime = 7 days;
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+uint public totalClaimedRewards = 0;
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+EnumerableSet.AddressSet private holders;
+**********
+function callme_re_ent35() public{
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+mapping (address => uint) public depositedTokens;
+**********
+function bug_re_ent20() public{
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+mapping (address => uint) public stakingTime;
+**********
+function claimReward_re_ent18() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+mapping (address => uint) public lastClaimedTime;
+**********
+function withdraw_balances_re_ent8 () public {
+(bool success,) = msg.sender.call.value(balances_re_ent8[msg.sender ])("");
+if (success)
+balances_re_ent8[msg.sender] = 0;
+}
+mapping (address => uint) public totalEarnedTokens;
+**********
+function withdrawFunds_re_ent3 (uint256 _weiToWithdraw) public {
+require(balances_re_ent3[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)= msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent3[msg.sender] -= _weiToWithdraw;
+}
+uint private constant stakingTokens = 680000e18;
+**********
+
+------------------------------
+function buyTicket_re_ent23() public{
+if (!(lastPlayer_re_ent23.send(jackpot_re_ent23)))
+revert();
+lastPlayer_re_ent23 = msg.sender;
+jackpot_re_ent23    = address(this).balance;
+}
+
+mapping (address => uint256) balances;mapping(address => uint) redeemableEther_re_ent25;
+**********
+// ensure there is a reward to give
+require(redeemableEther_re_ent25[msg.sender] > 0);
+uint transferValue_re_ent25 = redeemableEther_re_ent25[msg.sender];
+msg.sender.transfer(transferValue_re_ent25);   //bug
+redeemableEther_re_ent25[msg.sender] = 0;
+}
+
+mapping (address => mapping (address => uint)) allowed;
+**********
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+
+address payable public admin;
+**********
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+
+uint public totalSupply;
+**********
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+
+string public name;mapping(address => uint) balances_re_ent8;
+**********
+(bool success,) = msg.sender.call.value(balances_re_ent8[msg.sender ])("");
+if (success)
+balances_re_ent8[msg.sender] = 0;
+}
+
+uint8 public decimals;mapping(address => uint) balances_re_ent3;
+**********
+require(balances_re_ent3[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)= msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent3[msg.sender] -= _weiToWithdraw;
+}
+
+string public symbol;address payable lastPlayer_re_ent37;
+**********
+function buyTicket_re_ent37() public{
+if (!(lastPlayer_re_ent37.send(jackpot_re_ent37)))
+revert();
+lastPlayer_re_ent37 = msg.sender;
+jackpot_re_ent37    = address(this).balance;
+}
+
+string public version;
+**********
+
+------------------------------
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+**********
+uint jackpot_re_ent9;
+function buyTicket_re_ent9() public{
+(bool success,) = lastPlayer_re_ent9.call.value(jackpot_re_ent9)("");
+if (!success)
+revert();
+lastPlayer_re_ent9 = msg.sender;
+jackpot_re_ent9    = address(this).balance;
+}
+mapping (address => uint256) private _balances;
+**********
+uint jackpot_re_ent16;
+function buyTicket_re_ent16() public{
+if (!(lastPlayer_re_ent16.send(jackpot_re_ent16)))
+revert();
+lastPlayer_re_ent16 = msg.sender;
+jackpot_re_ent16    = address(this).balance;
+}
+mapping (address => mapping (address => uint256)) private _allowances;
+**********
+function withdrawBalance_re_ent40() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)=msg.sender.call.value(userBalance_re_ent40[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent40[msg.sender] = 0;
+}
+mapping(uint256=>address)public firstAccountHolder;
+**********
+function callme_re_ent42() public{
+require(counter_re_ent42<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent42 += 1;
+}
+uint256 private _totalSupply;
+**********
+function withdraw_balances_re_ent29 () public {
+if (msg.sender.send(balances_re_ent29[msg.sender ]))
+balances_re_ent29[msg.sender] = 0;
+}
+uint256 private amountToSell;
+**********
+function withdrawBalance_re_ent33() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+(bool success,)= msg.sender.call.value(userBalance_re_ent33[msg.sender])("");
+if( ! success ){
+revert();
+}
+userBalance_re_ent33[msg.sender] = 0;
+}
+uint256 public sold;
+**********
+function withdrawBalance_re_ent12() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent12[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent12[msg.sender] = 0;
+}
+uint256 private exchangeRate=15000;
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+}
+**********
+function withdrawFunds_re_ent17 (uint256 _weiToWithdraw) public {
+require(balances_re_ent17[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)=msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent17[msg.sender] -= _weiToWithdraw;
+}
+bool private isFunding;
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event shot(uint256 burntAmount,uint256 airdropAmount,address  from,address to);
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+**********
+
+------------------------------
+function withdraw_balances_re_ent21 () public {
+(bool success,)= msg.sender.call.value(balances_re_ent21[msg.sender ])("");
+if (success)
+balances_re_ent21[msg.sender] = 0;
+}
+uint256 public totalSupplyCap;
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+bytes32 public message;
+**********
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+bool public forSale;
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+bool public initialized;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+bool public transferable;
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event Approval(address indexed owner, address indexed spender, uint256 amount);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event Transfer(address indexed from, address indexed to, uint256 amount);
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+mapping(address => mapping(address => uint256)) public allowances;
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+mapping(address => uint256) private balances;
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+bool private _notEntered;
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+}
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+address payable public owner;
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+address public resolver;
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+string public name;
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+string public symbol;
+**********
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+uint8 public decimals;
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+uint256 public saleRate;
+**********
+
+------------------------------
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+bool private initialized;
+**********
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+bool public transferable;
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event Approval(address indexed owner, address indexed spender, uint256 amount);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event BalanceResolution(string indexed details);
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+mapping(address => mapping(address => uint256)) public allowances;
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+mapping(address => uint256) public balanceOf;
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+address payable public owner;
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+}
+**********
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+address public resolver;
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+uint8 public decimals;
+**********
+function withdraw_balances_re_ent21 () public {
+(bool success,)= msg.sender.call.value(balances_re_ent21[msg.sender ])("");
+if (success)
+balances_re_ent21[msg.sender] = 0;
+}
+uint256 public saleRate;
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+uint256 public totalSupplyCap;
+**********
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+string public message;
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+string public name;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+string public symbol;
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+bool public forSale;
+**********
+
+------------------------------
+function bug_re_ent20() public{
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+mapping (address => uint256) public balances;
+**********
+function claimReward_re_ent18() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+Payment[] public payments;
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event PaymentUpdated(uint256 index);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event PaymentCreated(uint256 index);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event BalanceUpdated(address payable target);
+**********
+
+------------------------------
+function withdrawFunds_re_ent17 (uint256 _weiToWithdraw) public {
+require(balances_re_ent17[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)=msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent17[msg.sender] -= _weiToWithdraw;
+}
+uint256 public totalStake;
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+uint256 public totalVipStake;
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+uint32 public currentVipCount;
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+uint32 public currentUserCount;
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+uint8  public governanceRate = 0;
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+mapping (uint32  => address) public userList;
+**********
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+mapping (address => bool) public vipMap;
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+mapping (address => uint256) private _balances;
+**********
+function withdraw_balances_re_ent21 () public {
+(bool success,)= msg.sender.call.value(balances_re_ent21[msg.sender ])("");
+if (success)
+balances_re_ent21[msg.sender] = 0;
+}
+mapping (address => address) public levelToUp;
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+mapping (address => address[]) public levelToDown;
+**********
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+mapping (address => uint) public vipProfit;
+**********
+function bug_re_ent41() public{
+require(not_called_re_ent41);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent41 = false;
+}
+event NewVip(address indexed from, uint256 amount);
+**********
+function callme_re_ent21() public{
+require(counter_re_ent21<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent21 += 1;
+}
+event Deposit(address indexed from, uint256 amount);
+**********
+function callme_re_ent14() public{
+require(counter_re_ent14<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent14 += 1;
+}
+event AddAdviser(address indexed down, address indexed up);
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event Withdraw(address indexed to, uint256 value);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event GovWithdraw(address indexed to, uint256 value);
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+uint constant private minInvestmentLimit = 10 finney;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+uint constant private vipBasePrice = 1 ether;
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+uint constant private vipLevelLimit = 100;
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+function depositWithAdviser(address _adviser) public payable{
+**********
+uint jackpot_re_ent23;
+function buyTicket_re_ent23() public{
+if (!(lastPlayer_re_ent23.send(jackpot_re_ent23)))
+revert();
+lastPlayer_re_ent23 = msg.sender;
+jackpot_re_ent23    = address(this).balance;
+}
+function isVip(address account) public view returns (bool) {
+**********
+function claimReward_re_ent25() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent25[msg.sender] > 0);
+uint transferValue_re_ent25 = redeemableEther_re_ent25[msg.sender];
+msg.sender.transfer(transferValue_re_ent25);   //bug
+redeemableEther_re_ent25[msg.sender] = 0;
+}
+function balanceOf(address account) public view returns (uint) {
+**********
+function withdrawBalance_re_ent12() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent12[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent12[msg.sender] = 0;
+}
+address public owner;
+**********
+
+------------------------------
+function withdrawFunds_re_ent31 (uint256 _weiToWithdraw) public {
+require(balances_re_ent31[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent31[msg.sender] -= _weiToWithdraw;
+}
+uint256 public saleRate;
+**********
+function withdrawFunds_re_ent24 (uint256 _weiToWithdraw) public {
+require(balances_re_ent24[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent24[msg.sender] -= _weiToWithdraw;
+}
+uint256 public totalSupplyCap;
+**********
+function withdraw_balances_re_ent21 () public {
+(bool success,)= msg.sender.call.value(balances_re_ent21[msg.sender ])("");
+if (success)
+balances_re_ent21[msg.sender] = 0;
+}
+bytes32 public message;
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+bool public forSale;
+**********
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+bool private initialized;
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+bool public transferable;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+mapping(address => mapping(address => uint256)) public allowances;
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+mapping(address => uint256) private balances;
+**********
+function withdrawFunds_re_ent17 (uint256 _weiToWithdraw) public {
+require(balances_re_ent17[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+(bool success,)=msg.sender.call.value(_weiToWithdraw)("");
+require(success);  //bug
+balances_re_ent17[msg.sender] -= _weiToWithdraw;
+}
+bool private _notEntered;
+**********
+function claimReward_re_ent11() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent11[msg.sender] > 0);
+uint transferValue_re_ent11 = redeemableEther_re_ent11[msg.sender];
+msg.sender.transfer(transferValue_re_ent11);   //bug
+redeemableEther_re_ent11[msg.sender] = 0;
+}
+address payable public owner;
+**********
+function withdraw_balances_re_ent15 () public {
+if (msg.sender.send(balances_re_ent15[msg.sender ]))
+balances_re_ent15[msg.sender] = 0;
+}
+address public resolver;
+**********
+function bug_re_ent6() public{
+require(not_called_re_ent6);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent6 = false;
+}
+string public name;
+**********
+uint jackpot_re_ent2;
+function buyTicket_re_ent2() public{
+if (!(lastPlayer_re_ent2.send(jackpot_re_ent2)))
+revert();
+lastPlayer_re_ent2 = msg.sender;
+jackpot_re_ent2    = address(this).balance;
+}
+string public symbol;
+**********
+function callme_re_ent28() public{
+require(counter_re_ent28<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent28 += 1;
+}
+uint8 public decimals;
+**********
+
+------------------------------
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+}
+**********
+function callme_re_ent7() public{
+require(counter_re_ent7<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent7 += 1;
+}
+mapping (address => uint) private balances;
+**********
+function bug_re_ent13() public{
+require(not_called_re_ent13);
+(bool success,)=msg.sender.call.value(1 ether)("");
+if( ! success ){
+revert();
+}
+not_called_re_ent13 = false;
+}
+address public owner;
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event LogDepositMade(address indexed accountAddress, uint amount);
+**********
+function claimReward_re_ent25() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent25[msg.sender] > 0);
+uint transferValue_re_ent25 = redeemableEther_re_ent25[msg.sender];
+msg.sender.transfer(transferValue_re_ent25);   //bug
+redeemableEther_re_ent25[msg.sender] = 0;
+}
+uint8 private clientCount;
+**********
+
+------------------------------
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+mapping (address => uint256) public balances;
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+Payment[] public payments;
+**********
+function callme_re_ent35() public{
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+mapping (uint256 => uint256[2]) public forkIndexes;
+**********
+
+------------------------------
+function bug_re_ent27() public{
+require(not_called_re_ent27);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent27 = false;
+}
+mapping (address=>uint256) donates;
+**********
+function withdrawBalance_re_ent19() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent19[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent19[msg.sender] = 0;
+}
+mapping (bytes32=>address) videos;
+**********
+function claimReward_re_ent4() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent4[msg.sender] > 0);
+uint transferValue_re_ent4 = redeemableEther_re_ent4[msg.sender];
+msg.sender.transfer(transferValue_re_ent4);   //bug
+redeemableEther_re_ent4[msg.sender] = 0;
+}
+mapping (address=>uint256) balances;
+**********
+function withdrawFunds_re_ent38 (uint256 _weiToWithdraw) public {
+require(balances_re_ent38[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent38[msg.sender] -= _weiToWithdraw;
+}
+event Donate(address indexed _owner, uint256 _amount);
+**********
+function claimReward_re_ent32() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent32[msg.sender] > 0);
+uint transferValue_re_ent32 = redeemableEther_re_ent32[msg.sender];
+msg.sender.transfer(transferValue_re_ent32);   //bug
+redeemableEther_re_ent32[msg.sender] = 0;
+}
+event Video(address indexed _sender, bytes32 _id);
+**********
+function bug_re_ent34() public{
+require(not_called_re_ent34);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent34 = false;
+}
+address payable newOwner;
+**********
+function callme_re_ent35() public{
+require(counter_re_ent35<=5);
+if( ! (msg.sender.send(10 ether) ) ){
+revert();
+}
+counter_re_ent35 += 1;
+}
+function acceptOwnership() public {
+**********
+function bug_re_ent20() public{
+require(not_called_re_ent20);
+if( ! (msg.sender.send(1 ether) ) ){
+revert();
+}
+not_called_re_ent20 = false;
+}
+}
+**********
+function claimReward_re_ent18() public {
+// ensure there is a reward to give
+require(redeemableEther_re_ent18[msg.sender] > 0);
+uint transferValue_re_ent18 = redeemableEther_re_ent18[msg.sender];
+msg.sender.transfer(transferValue_re_ent18);   //bug
+redeemableEther_re_ent18[msg.sender] = 0;
+}
+function transfer(address _to, uint256 _value) public returns (bool success);
+**********
+function withdraw_balances_re_ent8 () public {
+(bool success,) = msg.sender.call.value(balances_re_ent8[msg.sender ])("");
+if (success)
+balances_re_ent8[msg.sender] = 0;
+}
+}
+**********
+function withdrawBalance_re_ent5() public{
+// send userBalance[msg.sender] ethers to msg.sender
+// if mgs.sender is a contract, it will call its fallback function
+if( ! (msg.sender.send(userBalance_re_ent5[msg.sender]) ) ){
+revert();
+}
+userBalance_re_ent5[msg.sender] = 0;
+}
+uint256 public add;
+**********
+function withdrawFunds_re_ent10 (uint256 _weiToWithdraw) public {
+require(balances_re_ent10[msg.sender] >= _weiToWithdraw);
+// limit the withdrawal
+require(msg.sender.send(_weiToWithdraw));  //bug
+balances_re_ent10[msg.sender] -= _weiToWithdraw;
+}
+address payable owner;
+**********
+function withdraw_balances_re_ent36 () public {
+if (msg.sender.send(balances_re_ent36[msg.sender ]))
+balances_re_ent36[msg.sender] = 0;
+}
+uint8 public fee;
+**********
+function withdraw_balances_re_ent1 () public {
+(bool success,) =msg.sender.call.value(balances_re_ent1[msg.sender ])("");
+if (success)
+balances_re_ent1[msg.sender] = 0;
+}
+uint8 public bonus;
+**********
+uint jackpot_re_ent30;
+function buyTicket_re_ent30() public{
+if (!(lastPlayer_re_ent30.send(jackpot_re_ent30)))
+revert();
+lastPlayer_re_ent30 = msg.sender;
+jackpot_re_ent30    = address(this).balance;
+}
+address public token;
+**********
+
+------------------------------

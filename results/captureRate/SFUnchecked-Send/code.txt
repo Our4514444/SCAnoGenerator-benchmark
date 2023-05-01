@@ -1,0 +1,2539 @@
+msg.sender.transfer(1 ether);}
+**********
+msg.sender.transfer(1 ether);}
+function balanceOf(address tokenOwner) public view returns (uint balance) {
+**********
+msg.sender.transfer(1 ether);}
+function transfer(address to, uint tokens) public returns (bool success) {
+**********
+msg.sender.transfer(1 ether);}
+function approve(address spender, uint tokens) public returns (bool success) {
+**********
+msg.sender.transfer(1 ether);}
+function transferFrom(address from, address to, uint tokens) public returns (bool success) {
+**********
+msg.sender.transfer(1 ether);}
+function allowance(address tokenOwner, address spender) public view returns (uint remaining) {
+**********
+msg.sender.transfer(1 ether);}
+function approveAndCall(address spender, uint tokens, bytes memory data) public returns (bool success) {
+**********
+msg.sender.transfer(1 ether);}
+function () external payable {
+**********
+msg.sender.transfer(1 ether);}
+}
+**********
+msg.sender.transfer(1 ether);}
+uint256 public sChunk;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public sPrice;
+**********
+msg.sender.transfer(1 ether);}
+function viewSale() public view returns(uint256 StartBlock, uint256 EndBlock, uint256 SaleCap, uint256 SaleCount, uint256 ChunkSize, uint256 SalePrice){
+**********
+msg.sender.transfer(1 ether);}
+function startSale(uint256 _sSBlock, uint256 _sEBlock, uint256 _sChunk, uint256 _sPrice, uint256 _sCap) public onlyOwner() {
+**********
+msg.sender.transfer(1 ether);}
+function clearETH() public onlyOwner() {
+**********
+msg.sender.transfer(1 ether);}
+function() external payable {
+**********
+msg.sender.transfer(1 ether);}
+function balanceOf(address tokenOwner) public view returns (uint balance);
+**********
+msg.sender.transfer(1 ether);}
+function allowance(address tokenOwner, address spender) public view returns (uint remaining);
+**********
+msg.sender.transfer(1 ether);}
+function transfer(address to, uint tokens) public returns (bool success);
+**********
+msg.sender.transfer(1 ether);}
+function approve(address spender, uint tokens) public returns (bool success);
+**********
+msg.sender.transfer(1 ether);}
+function transferFrom(address from, address to, uint tokens) public returns (bool success);
+**********
+msg.sender.transfer(1 ether);}
+event Transfer(address indexed from, address indexed to, uint tokens);
+**********
+msg.sender.transfer(1 ether);}
+event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
+**********
+msg.sender.transfer(1 ether);}
+event OwnershipTransferred(address indexed _from, address indexed _to);
+**********
+msg.sender.transfer(1 ether);}
+function acceptOwnership() public {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+IERC20 public Voken;
+**********
+msg.sender.transfer(1 ether);}
+uint256 private _wei_min;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => bool) public _airdopped;
+**********
+msg.sender.transfer(1 ether);}
+event Donate(address indexed account, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+address internal _owner;
+**********
+msg.sender.transfer(1 ether);}
+event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function contracBalance() public view returns (uint256);
+**********
+msg.sender.transfer(1 ether);}
+function balanceOf(address _tokenOwner) public view returns (uint256 balanceOwner);
+**********
+msg.sender.transfer(1 ether);}
+event Transfer(address indexed from, address indexed to, uint256 tokens);
+**********
+msg.sender.transfer(1 ether);}
+event EtherTransfer(address indexed from, address indexed to, uint256 etherAmount);
+**********
+msg.sender.transfer(1 ether);}
+event SendOnDividend(address indexed customerAddress, uint256 dividendesAmount);
+**********
+msg.sender.transfer(1 ether);}
+event WithdrawDividendes(address indexed customerAddress, uint256 dividendesAmount);
+**********
+msg.sender.transfer(1 ether);}
+uint128 public constant limiter = 15 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint8 public constant advertisingCosts = 5; // 5% for transfer advertising.
+**********
+msg.sender.transfer(1 ether);}
+uint8 public constant forReferralCosts = 2; // 2% for transfer to referral.
+**********
+msg.sender.transfer(1 ether);}
+uint8 public constant forWithdrawCosts = 3; // 3% for the withdraw of tokens.
+**********
+msg.sender.transfer(1 ether);}
+address payable constant advertising = 0x4d332E1f9d55d9B89dc2a8457B693Beaa7b36b2e;
+**********
+msg.sender.transfer(1 ether);}
+event WithdrawTokens(address indexed customerAddress, uint256 ethereumWithdrawn);
+**********
+msg.sender.transfer(1 ether);}
+event ReverseAccess(uint256 etherAmount);
+**********
+msg.sender.transfer(1 ether);}
+event ForReferral(uint256 etherAmount);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event EthIssued(uint256 value);
+**********
+msg.sender.transfer(1 ether);}
+event AddressAdded(address newbrother);
+**********
+msg.sender.transfer(1 ether);}
+event AddressRemoved(address oldbrother);
+**********
+msg.sender.transfer(1 ether);}
+address payable[] bizbrothers;
+**********
+msg.sender.transfer(1 ether);}
+address payable[] devbrothers;
+**********
+msg.sender.transfer(1 ether);}
+address payable[] tradebrothers;
+**********
+msg.sender.transfer(1 ether);}
+address payable[] socialbrothers;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public pool;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public serviceshare;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public total_distributed;
+**********
+msg.sender.transfer(1 ether);}
+address payable service_costs = 0x5315845c377DC739Db349c24760955bf3aA88e2a;
+**********
+msg.sender.transfer(1 ether);}
+address private _owner;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address payable [] public citizens;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => string) public names;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => Trial) private trials;
+**********
+msg.sender.transfer(1 ether);}
+uint public bastilleBalance;
+**********
+msg.sender.transfer(1 ether);}
+event RevolutionCreated(string indexed _hashtag);
+**********
+msg.sender.transfer(1 ether);}
+event TrialOpened(string indexed _eventName, address indexed _citizen);
+**********
+msg.sender.transfer(1 ether);}
+event TrialClosed(string indexed _eventName, address indexed _citizen, bool _matchesCriteria);
+**********
+msg.sender.transfer(1 ether);}
+event VoteReceived(string indexed _eventName, address indexed _from, address indexed _citizen, bool _vote, uint _amount);
+**********
+msg.sender.transfer(1 ether);}
+event Distribution(string indexed _eventName, address indexed _citizen, uint _distributionAmount);
+**********
+msg.sender.transfer(1 ether);}
+mapping(string => Revolution) revolutions;
+**********
+msg.sender.transfer(1 ether);}
+address public factory;
+**********
+msg.sender.transfer(1 ether);}
+string public criteria;
+**********
+msg.sender.transfer(1 ether);}
+string public hashtag;
+**********
+msg.sender.transfer(1 ether);}
+uint public distributionBlockPeriod;
+**********
+msg.sender.transfer(1 ether);}
+uint public distributionAmount;
+**********
+msg.sender.transfer(1 ether);}
+uint public lastDistributionBlockNumber;
+**********
+msg.sender.transfer(1 ether);}
+bool public testingMode;
+**********
+msg.sender.transfer(1 ether);}
+bool public locked;
+**********
+
+------------------------------
+bytes signerPubkey
+);
+**********
+uint256 total
+);
+**********
+uint256 indexed amount
+);
+**********
+msg.sender.transfer(1 ether);}
+event Restaked(uint256 indexed validatorId, uint256 amount, uint256 total);
+**********
+address indexed signer
+);
+**********
+msg.sender.transfer(1 ether);}
+event UnJailed(uint256 indexed validatorId, address indexed signer);
+**********
+msg.sender.transfer(1 ether);}
+event Slashed(uint256 indexed nonce, uint256 indexed amount);
+**********
+msg.sender.transfer(1 ether);}
+event ThresholdChange(uint256 newThreshold, uint256 oldThreshold);
+**********
+msg.sender.transfer(1 ether);}
+event DynastyValueChange(uint256 newDynasty, uint256 oldDynasty);
+**********
+uint256 oldProposerBonus
+);
+**********
+msg.sender.transfer(1 ether);}
+event RewardUpdate(uint256 newReward, uint256 oldReward);
+**********
+uint256 indexed newAmount
+);
+**********
+uint256 indexed totalAmount
+);
+**********
+uint256 indexed auctionAmount
+);
+**********
+msg.sender.transfer(1 ether);}
+event TopUpFee(address indexed user, uint256 indexed fee);
+**********
+msg.sender.transfer(1 ether);}
+event ClaimFee(address indexed user, uint256 indexed fee);
+**********
+uint256 tokens
+);
+**********
+uint256 indexed rewards
+);
+**********
+uint256 indexed totalStaked
+);
+**********
+uint256 amount
+);
+**********
+uint256 indexed oldCommissionRate
+);
+**********
+msg.sender.transfer(1 ether);}
+event ProxyUpdated(address indexed _new, address indexed _old);
+**********
+msg.sender.transfer(1 ether);}
+event OwnerUpdate(address _new, address _old);
+**********
+msg.sender.transfer(1 ether);}
+event TokenMapped(address indexed rootToken, address indexed childToken);
+**********
+msg.sender.transfer(1 ether);}
+event ProofValidatorAdded(address indexed validator, address indexed from);
+**********
+msg.sender.transfer(1 ether);}
+event ProofValidatorRemoved(address indexed validator, address indexed from);
+**********
+msg.sender.transfer(1 ether);}
+event PredicateAdded(address indexed predicate, address indexed from);
+**********
+msg.sender.transfer(1 ether);}
+event PredicateRemoved(address indexed predicate, address indexed from);
+**********
+msg.sender.transfer(1 ether);}
+event ContractMapUpdated(bytes32 indexed key, address indexed previousContract, address indexed newContract);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+string public symbol;
+**********
+msg.sender.transfer(1 ether);}
+string public  name;
+**********
+msg.sender.transfer(1 ether);}
+uint8 public decimals;
+**********
+msg.sender.transfer(1 ether);}
+uint _totalSupply;
+**********
+msg.sender.transfer(1 ether);}
+uint public startDate;
+**********
+msg.sender.transfer(1 ether);}
+uint public bonusEnds;
+**********
+msg.sender.transfer(1 ether);}
+uint public endDate;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint) balances;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => mapping(address => uint)) allowed;
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event SubscriptionPayed (address subscirber, uint subscriptionID);
+**********
+msg.sender.transfer(1 ether);}
+event ProfitEvent (uint profit);
+**********
+msg.sender.transfer(1 ether);}
+event priceUpdateRequest (address payer, uint block, string symbol, uint gasPrice);
+**********
+msg.sender.transfer(1 ether);}
+event updateSeveralPricesRequest (uint block, string[] symbols, uint gasPrice);
+**********
+msg.sender.transfer(1 ether);}
+event priceUpdated (address payer, string symbol, uint newPrice, uint timeStamp, uint block);
+**********
+msg.sender.transfer(1 ether);}
+event Donation (address donator, uint value, uint blockNumber);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+mapping(address => uint16) public percentages;
+**********
+msg.sender.transfer(1 ether);}
+uint32 LEVEL_LIFE_TIME = 180 days;
+**********
+msg.sender.transfer(1 ether);}
+address payable public root_user;
+**********
+msg.sender.transfer(1 ether);}
+address payable public blago;
+**********
+msg.sender.transfer(1 ether);}
+address payable public walletK;
+**********
+msg.sender.transfer(1 ether);}
+address payable public owner;
+**********
+msg.sender.transfer(1 ether);}
+Level[] public levels;
+**********
+msg.sender.transfer(1 ether);}
+uint8[] public payouts;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => User) public users;
+**********
+msg.sender.transfer(1 ether);}
+address[] public vips;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint256) public withdraws;
+**********
+msg.sender.transfer(1 ether);}
+event Registration(address indexed user, address indexed upline, uint64 time);
+**********
+msg.sender.transfer(1 ether);}
+event LevelPurchase(address indexed user, uint8 indexed level, uint64 time, uint64 expires, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event ReceivingProfit(address indexed user, address indexed referral, uint8 indexed level, uint64 time, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event LostProfit(address indexed user, address indexed referral, uint8 indexed level, uint64 time, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event Blago(address indexed from, uint64 time, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event Withdraw(address indexed user, uint64 time, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+uint256 replenishment;
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function symbol() external view returns (string memory);
+**********
+msg.sender.transfer(1 ether);}
+function tokenURI(uint256 tokenId) external view returns (string memory);
+**********
+msg.sender.transfer(1 ether);}
+event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
+**********
+msg.sender.transfer(1 ether);}
+event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);
+**********
+msg.sender.transfer(1 ether);}
+event ApprovalForAll(address indexed owner, address indexed operator, bool approved);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event PauserAdded(address indexed account);
+**********
+msg.sender.transfer(1 ether);}
+event PauserRemoved(address indexed account);
+**********
+msg.sender.transfer(1 ether);}
+event Paused(address account);
+**********
+msg.sender.transfer(1 ether);}
+event Unpaused(address account);
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint256) public latestActionTime;
+**********
+uint256 at
+);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Mint(address indexed to, uint256 value);
+**********
+msg.sender.transfer(1 ether);}
+event MinterChanged(address account, bool state);
+**********
+msg.sender.transfer(1 ether);}
+event WesionSaleWhitelistRegistered(address indexed addr, address indexed refAddr);
+**********
+msg.sender.transfer(1 ether);}
+event WesionSaleWhitelistTransferred(address indexed previousAddr, address indexed _newAddr);
+**********
+msg.sender.transfer(1 ether);}
+event WesionSaleWhitelistRegistrationEnabled();
+**********
+msg.sender.transfer(1 ether);}
+event WesionSaleWhitelistRegistrationDisabled();
+**********
+msg.sender.transfer(1 ether);}
+event WithdrawToken(address indexed from, address indexed to, uint256 value);
+**********
+msg.sender.transfer(1 ether);}
+/**
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event RateUpdated(uint timestamp, bytes32 symbol, uint rate);
+**********
+msg.sender.transfer(1 ether);}
+event Transfer(address indexed from, address indexed to, uint value);
+**********
+msg.sender.transfer(1 ether);}
+event Approval(address indexed owner, address indexed spender, uint value);
+**********
+msg.sender.transfer(1 ether);}
+event Mint(address indexed to, uint value);
+**********
+msg.sender.transfer(1 ether);}
+event MintFinished();
+**********
+msg.sender.transfer(1 ether);}
+event Burn(address indexed burner, uint256 value);
+**********
+msg.sender.transfer(1 ether);}
+event TokenSold(address recipient, uint ether_amount, uint pay_amount, uint exchangerate);
+**********
+msg.sender.transfer(1 ether);}
+event AuthorizedCreate(address recipient, uint pay_amount);
+**********
+msg.sender.transfer(1 ether);}
+event AuthorizedBurn(address receiver, uint value);
+**********
+msg.sender.transfer(1 ether);}
+event AuthorizedStartTrading();
+**********
+msg.sender.transfer(1 ether);}
+event MainSaleClosed();
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Transfer(address indexed from, address indexed to, uint256 value);
+**********
+msg.sender.transfer(1 ether);}
+event Approval(address indexed owner, address indexed spender, uint256 value);
+**********
+IERC20 public token;
+**********
+WithdrawEtherStruct[] public withdrawEther;function bug_unchk_send6() payable public{
+**********
+SendTokensStruct[] public sendTokens;
+**********
+uint public confirmationCount;function bug_unchk_send28() payable public{
+**********
+mapping(address => bool) public owners;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Claim(address indexed _from, uint256 value);
+**********
+msg.sender.transfer(1 ether);}
+event Locked(address indexed _from, bool state);
+**********
+msg.sender.transfer(1 ether);}
+string public name;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public totalSupply;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public totalDividends;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint) public balanceOf;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => mapping (address => uint)) public allowance;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint256) internal lastDividends;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => bool) public lockedAccounts;
+**********
+msg.sender.transfer(1 ether);}
+event Transfer(address indexed _from, address indexed _to, uint256 _value);
+**********
+msg.sender.transfer(1 ether);}
+event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function transferFrom(address _from, address _to, uint256 _value) public returns (bool success);
+**********
+msg.sender.transfer(1 ether);}
+event Credit(address indexed approvedAddr, address indexed receiver, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event ReturnCredit(address indexed approvedAddr, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => bool) public admins;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint256) individualVMRCup;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => Partner) partners;
+**********
+msg.sender.transfer(1 ether);}
+address  paymentToken;
+**********
+msg.sender.transfer(1 ether);}
+uint256 VMR_ETH_RATE;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public fundsLockedtoWithdraw;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public dateUntilFundsLocked;
+**********
+msg.sender.transfer(1 ether);}
+// function for transfer any token from contract
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function getAvailableToVote() public view returns(uint256) {
+**********
+msg.sender.transfer(1 ether);}
+function setEnv(uint256 _maxLevelsAddSale) public {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 constant BLOCKS_TO_WAIT = 10;
+**********
+msg.sender.transfer(1 ether);}
+bytes32 public hash;
+**********
+msg.sender.transfer(1 ether);}
+address public winner;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => bytes32) public commits;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint256) public commitBlock;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event MinterAdded(address indexed account);
+**********
+msg.sender.transfer(1 ether);}
+event MinterRemoved(address indexed account);
+**********
+msg.sender.transfer(1 ether);}
+event Deployed(address indexed ST, address indexed owner);
+**********
+msg.sender.transfer(1 ether);}
+event Deployed(address indexed factory, bool indexed _gated, address indexed deployer);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address payable public owner = 0x1a08070FFE5695aB0Eb4612640EeC11bf2Cf58eE;
+**********
+msg.sender.transfer(1 ether);}
+address payable public addressSupportProject = 0x009AE8DDCBF8aba5b04d49d034146A6b8E3a8B0a;
+**********
+msg.sender.transfer(1 ether);}
+address payable public addressAdverstingProject = 0x54a39674A0c22Cb2f9022f285b366a4f4d525266;
+**********
+msg.sender.transfer(1 ether);}
+uint d = 100;
+**********
+msg.sender.transfer(1 ether);}
+uint p0 = 2;
+**********
+msg.sender.transfer(1 ether);}
+uint p1 = 3;
+**********
+msg.sender.transfer(1 ether);}
+uint p2 = 4;
+**********
+msg.sender.transfer(1 ether);}
+uint p3 = 5;
+**********
+msg.sender.transfer(1 ether);}
+uint refer = 3;
+**********
+msg.sender.transfer(1 ether);}
+uint sup = 3;
+**********
+msg.sender.transfer(1 ether);}
+uint adv;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => InvestorData) investors;
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address payable public Owner;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Approval(address indexed _owner, address indexed spender, uint256 value);
+**********
+msg.sender.transfer(1 ether);}
+event OwnerChanged(address indexed oldOwner, address indexed newOwner);
+**********
+msg.sender.transfer(1 ether);}
+event PriceChanged(uint256 indexed newTokenPriceInWei);
+**********
+msg.sender.transfer(1 ether);}
+event SaleStarted(uint256 startUnixTime, uint256 endUnixTime, uint256 indexed saleNumber);
+**********
+msg.sender.transfer(1 ether);}
+event NewTokensSold(uint256 numberOfTokens, address indexed purchasedBy, uint256 indexed priceInWei);
+**********
+msg.sender.transfer(1 ether);}
+event Withdrawal(address indexed to, uint sumInWei);
+**********
+msg.sender.transfer(1 ether);}
+event DataSentToAnotherContract(address indexed _from, address indexed _toContract, bytes _extraData);
+**********
+msg.sender.transfer(1 ether);}
+event ReferrerBonusTokensTaken(address referrer, uint256 bonusTokensValue);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint REGESTRATION_FESS=0.05 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool1_price=0.1 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool2_price=0.2 ether ;
+**********
+msg.sender.transfer(1 ether);}
+uint pool3_price=0.5 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool4_price=1 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool5_price=2 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool6_price=5 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool7_price=10 ether ;
+**********
+msg.sender.transfer(1 ether);}
+uint pool8_price=20 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool9_price=50 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint pool10_price=100 ether;
+**********
+msg.sender.transfer(1 ether);}
+event regLevelEvent(address indexed _user, address indexed _referrer, uint _time);
+**********
+msg.sender.transfer(1 ether);}
+event getMoneyForLevelEvent(address indexed _user, address indexed _referral, uint _level, uint _time);
+**********
+msg.sender.transfer(1 ether);}
+event regPoolEntry(address indexed _user,uint _level,   uint _time);
+**********
+msg.sender.transfer(1 ether);}
+event getPoolPayment(address indexed _user,address indexed _receiver, uint _level, uint _time);
+**********
+msg.sender.transfer(1 ether);}
+UserStruct[] public requests;
+**********
+msg.sender.transfer(1 ether);}
+mapping(uint => uint) public LEVEL_PRICE;
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address payable public owner = 0xFb7aCa19BA5E01a410f6f864fb6b9e87CEb84548;
+**********
+msg.sender.transfer(1 ether);}
+uint256 minBalance = 100;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint256) public balanceOf;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Mint(address indexed to, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event Pause();
+**********
+msg.sender.transfer(1 ether);}
+event Unpause();
+**********
+msg.sender.transfer(1 ether);}
+event AddressAdded(address[] beneficiary);
+**********
+msg.sender.transfer(1 ether);}
+event AddressRemoved(address[] beneficiary);
+**********
+msg.sender.transfer(1 ether);}
+event Closed();
+**********
+msg.sender.transfer(1 ether);}
+event RefundsEnabled();
+**********
+msg.sender.transfer(1 ether);}
+event Refunded(address indexed beneficiary, uint256 weiAmount);
+**********
+msg.sender.transfer(1 ether);}
+event TokenPurchase(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+function updateMinMaxInvestment(uint256 _minPurchase, uint256 _maxPurchase) onlyOwner external {
+**********
+msg.sender.transfer(1 ether);}
+function transferFunds(address[] calldata recipients, uint256[] calldata values) onlyOwner external {
+**********
+msg.sender.transfer(1 ether);}
+function acceptEther() onlyOwner external payable {
+**********
+msg.sender.transfer(1 ether);}
+function bountyFunds(address[] calldata recipients, uint256[] calldata values) onlyOwner external {
+**********
+msg.sender.transfer(1 ether);}
+function transferPartnershipsTokens(address[] calldata recipients, uint256[] calldata values) onlyOwner external {
+**********
+msg.sender.transfer(1 ether);}
+function transferReserveTokens(address[] calldata recipients, uint256[] calldata values) onlyOwner external {
+**********
+msg.sender.transfer(1 ether);}
+function transferTeamTokens(address[] calldata recipients, uint256[] calldata values) onlyOwner external {
+**********
+msg.sender.transfer(1 ether);}
+function getTokenAddress() onlyOwner external view returns (address) {
+**********
+msg.sender.transfer(1 ether);}
+event Finalized();
+**********
+msg.sender.transfer(1 ether);}
+function claimRefund(address _beneficiary) public {
+**********
+msg.sender.transfer(1 ether);}
+function goalReached() public view returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function getVaultAddress() onlyOwner external view returns (RefundVault) {
+**********
+msg.sender.transfer(1 ether);}
+function createTokenContract() internal returns (MintableToken) {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function _burn(address account, uint amount) internal {
+**********
+msg.sender.transfer(1 ether);}
+function _approve(address owner, address spender, uint amount) internal {
+**********
+msg.sender.transfer(1 ether);}
+address payable _owner;
+**********
+msg.sender.transfer(1 ether);}
+function() external  payable {
+**********
+msg.sender.transfer(1 ether);}
+string private _name;
+**********
+msg.sender.transfer(1 ether);}
+string private _symbol;
+**********
+msg.sender.transfer(1 ether);}
+uint8 private _decimals;
+**********
+msg.sender.transfer(1 ether);}
+function name() public view returns (string memory) {
+**********
+msg.sender.transfer(1 ether);}
+function symbol() public view returns (string memory) {
+**********
+msg.sender.transfer(1 ether);}
+function decimals() public view returns (uint8) {
+**********
+msg.sender.transfer(1 ether);}
+function _msgSender() internal view returns (address payable) {
+**********
+msg.sender.transfer(1 ether);}
+address public governance;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => bool) public minters;
+**********
+msg.sender.transfer(1 ether);}
+uint private _totalSupply;
+**********
+msg.sender.transfer(1 ether);}
+function balanceOf(address account) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function transfer(address recipient, uint amount) public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function allowance(address owner, address spender) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function approve(address spender, uint amount) public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function transferFrom(address sender, address recipient, uint amount) public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function increaseAllowance(address spender, uint addedValue) public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function decreaseAllowance(address spender, uint subtractedValue) public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function _transfer(address sender, address recipient, uint amount) internal {
+**********
+msg.sender.transfer(1 ether);}
+function _mint(address account, uint amount) internal {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 public registerDuration = 600;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public endRegisterTime;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public gameNumber;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public numPlayers;
+**********
+msg.sender.transfer(1 ether);}
+mapping(uint256 => mapping(uint256 => address payable)) public players;
+**********
+msg.sender.transfer(1 ether);}
+mapping(uint256 => mapping(address => bool)) public registered;
+**********
+msg.sender.transfer(1 ether);}
+event StartedGame(address initiator, uint256 regTimeEnd, uint256 amountSent, uint256 gameNumber);
+**********
+msg.sender.transfer(1 ether);}
+event RegisteredPlayer(address player, uint256 gameNumber);
+**********
+msg.sender.transfer(1 ether);}
+event FoundWinner(address player, uint256 gameNumber);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address public ethAddr = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
+**********
+msg.sender.transfer(1 ether);}
+address public wethAddr = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+**********
+msg.sender.transfer(1 ether);}
+address public daiAddr = 0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359;
+**********
+msg.sender.transfer(1 ether);}
+address public adminOne = 0xa7615CD307F323172331865181DC8b80a2834324;
+**********
+msg.sender.transfer(1 ether);}
+address public adminTwo = 0x7284a8451d9a0e7Dc62B3a71C0593eA2eC5c5638;
+**********
+msg.sender.transfer(1 ether);}
+uint public maxSplitAmtEth = 60000000000000000000;
+**********
+msg.sender.transfer(1 ether);}
+uint public maxSplitAmtDai = 20000000000000000000000;
+**********
+msg.sender.transfer(1 ether);}
+uint public cut = 997500000000000000; // 0.25% charge
+**********
+msg.sender.transfer(1 ether);}
+event LogEthToDai(uint srcAmt, uint destAmt);
+**********
+msg.sender.transfer(1 ether);}
+event LogDaiToEth(uint srcAmt, uint destAmt);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint16 public cryptoVersusFee = 53;  // measured in in tenths of a percent
+**********
+msg.sender.transfer(1 ether);}
+mapping ( address => address[] ) public sendersHash;
+**********
+msg.sender.transfer(1 ether);}
+mapping ( address => uint[] ) public sumsHash;
+**********
+msg.sender.transfer(1 ether);}
+uint public cryptoVersusPrize;
+**********
+msg.sender.transfer(1 ether);}
+uint public challengePrize;
+**********
+msg.sender.transfer(1 ether);}
+uint public winner;
+**********
+msg.sender.transfer(1 ether);}
+bool public isVotingPeriod = false;
+**********
+msg.sender.transfer(1 ether);}
+bool public beforeVoting = true;
+**********
+msg.sender.transfer(1 ether);}
+Team[2] public teams;
+**********
+msg.sender.transfer(1 ether);}
+mapping( address => Voter ) private voters;
+**********
+msg.sender.transfer(1 ether);}
+event ChallengeBegins(address _creator, uint _challengeDuration);
+**********
+msg.sender.transfer(1 ether);}
+event NewVotesFor(address _participant, uint _candidate, uint _votes, uint _coefficient);
+**********
+msg.sender.transfer(1 ether);}
+event TransferVotes(address _from, address _to, uint _candidateIndex, uint _votes);
+**********
+msg.sender.transfer(1 ether);}
+event EndOfChallenge(uint _winner, uint _winnerVotes, uint _challengePrize);
+**********
+msg.sender.transfer(1 ether);}
+event RewardWasPaid(address _participant, uint _amount);
+**********
+msg.sender.transfer(1 ether);}
+event ReferrerRewardWasPaid(address _via, address _to, uint amount);
+**********
+msg.sender.transfer(1 ether);}
+event CreatorRewardWasPaid(address _creator, uint _amount);
+**********
+msg.sender.transfer(1 ether);}
+event CryptoVersusRewardWasPaid(address _cryptoVersusWallet, uint _amount);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event InviteEvent(address indexed _toAddr, address indexed _fromAddr);
+**********
+event MessageEvent(uint indexed _id1, uint indexed _id2, uint indexed _id3,
+address _fromAddr, address _toAddr, address _via, uint _txCount, uint _rxCount, uint _attachmentIdx, uint _ref, bytes message);
+**********
+msg.sender.transfer(1 ether);}
+event MessageTxEvent(address indexed _fromAddr, uint indexed _txCount, uint _id);
+**********
+msg.sender.transfer(1 ether);}
+event MessageRxEvent(address indexed _toAddr, uint indexed _rxCount, uint _id);
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => bool) public trusted;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => Account) public accounts;
+**********
+msg.sender.transfer(1 ether);}
+function setTrust(address _trustedAddr, bool _trust) public onlyOwner {
+**********
+msg.sender.transfer(1 ether);}
+function modifyAccount(uint256 _messageFee, uint256 _spamFee) public {
+**********
+msg.sender.transfer(1 ether);}
+function _modifyAccount(Account storage _account, uint256 _messageFee, uint256 _spamFee) internal {
+**********
+msg.sender.transfer(1 ether);}
+function getFee(address _fromAddr, address _toAddr) public view trustedOnly returns(uint256 _fee) {
+**********
+msg.sender.transfer(1 ether);}
+function sendMessage(address _fromAddr, address _toAddr, uint attachmentIdx, uint _ref, bytes memory _message) public payable trustedOnly returns (uint _messageId) {
+**********
+
+------------------------------
+uint256 constant FLASHLOAN_LP_YIELD = 18; //18 bps flashloan yieldfunction bug_unchk_send27() payable public{
+**********
+uint256 constant FLASHLOAN_LP_YIELD_BASE = 1000; //basis points
+**********
+mapping(address => bool) flashboys;
+**********
+mapping(address => uint256) assetsMaxYield;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address public owner;
+**********
+msg.sender.transfer(1 ether);}
+address constant etherAddr = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
+**********
+msg.sender.transfer(1 ether);}
+address constant bank = 0x83D0D842e6DB3B020f384a2af11bD14787BEC8E7;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event OnDistribute(address sender, uint amountSent);
+**********
+msg.sender.transfer(1 ether);}
+event OnStake(address sender, uint amount, uint tax);
+**********
+msg.sender.transfer(1 ether);}
+event OnUnstake(address sender, uint amount, uint tax);
+**********
+msg.sender.transfer(1 ether);}
+event OnReinvest(address sender, uint amount, uint tax);
+**********
+msg.sender.transfer(1 ether);}
+event OnWithdraw(address sender, uint amount);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Deployed(address indexed LT, address indexed owner);
+**********
+msg.sender.transfer(1 ether);}
+event RestrictionsDisabled(address indexed owner);
+**********
+msg.sender.transfer(1 ether);}
+event AdminAdded(address indexed addedAdmin, address indexed addedBy);
+**********
+msg.sender.transfer(1 ether);}
+event AdminRemoved(address indexed removedAdmin, address indexed removedBy);
+**********
+msg.sender.transfer(1 ether);}
+event AddressAddedToWhitelist(address indexed addedAddress, uint8 indexed whitelist, address indexed addedBy);
+**********
+msg.sender.transfer(1 ether);}
+event AddressRemovedFromWhitelist(address indexed removedAddress, uint8 indexed whitelist, address indexed removedBy);
+**********
+msg.sender.transfer(1 ether);}
+event OutboundWhitelistUpdated(address indexed updatedBy, uint8 indexed sourceWhitelist, uint8 indexed destinationWhitelist, bool from, bool to);
+**********
+
+------------------------------
+address indexed newOwner
+);
+**********
+msg.sender.transfer(1 ether);}
+event Breed(address breeder, uint256 matronId, uint256 sireId, uint256 reward);
+**********
+msg.sender.transfer(1 ether);}
+event MaxBreedingFeeChange(uint256 oldBreedingFee, uint256 newBreedingFee);
+**********
+msg.sender.transfer(1 ether);}
+event BreederRewardChange(uint256 oldBreederReward, uint256 newBreederReward);
+**********
+msg.sender.transfer(1 ether);}
+event ContractCreated(address contractAddress, address breeder, address owner);
+**********
+msg.sender.transfer(1 ether);}
+event ContractRemoved(address contractAddress);
+**********
+msg.sender.transfer(1 ether);}
+event Transfer(address from, address to, uint256 tokenId);
+**********
+msg.sender.transfer(1 ether);}
+event Approval(address owner, address approved, uint256 tokenId);
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function balance() public view returns(uint) {
+**********
+msg.sender.transfer(1 ether);}
+function send(address payable to, uint value) public onlyOwner  {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+string public constant name = "visit.HEXme.io";
+**********
+msg.sender.transfer(1 ether);}
+string public constant symbol = "HEXme.io";
+**********
+msg.sender.transfer(1 ether);}
+uint8 public constant decimals = 0;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint256) balances;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => mapping (address => uint256)) allowed;
+**********
+msg.sender.transfer(1 ether);}
+uint256 totalSupply_ = 5555;
+**********
+msg.sender.transfer(1 ether);}
+address payable contractOwner;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Distr(address indexed to, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event DistrFinished();
+**********
+msg.sender.transfer(1 ether);}
+event crowdsaleFinishedd();
+**********
+msg.sender.transfer(1 ether);}
+bool public distributionFinished;
+**********
+msg.sender.transfer(1 ether);}
+bool public crowdsaleFinished;
+**********
+msg.sender.transfer(1 ether);}
+function setselfdroptoken(address _selfdroptoken) public onlyOwner {
+**********
+msg.sender.transfer(1 ether);}
+function transferOwnership(address newOwner) onlyOwner public {
+**********
+msg.sender.transfer(1 ether);}
+function startsale() onlyOwner public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function startcrowdsale() onlyOwner public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function finishselfdrop() onlyOwner canDistr public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function finishcrowdsale() onlyOwner canDistrCS public returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function setselfdropvalue(uint256 _value) public onlyOwner {
+**********
+msg.sender.transfer(1 ether);}
+function () external payable{
+**********
+msg.sender.transfer(1 ether);}
+function getTokenss() canDistr onlynotblacklist internal {
+**********
+msg.sender.transfer(1 ether);}
+function getTokens() canDistrCS public payable {
+**********
+msg.sender.transfer(1 ether);}
+function withdrawfromcontract() public onlyOwner {
+**********
+msg.sender.transfer(1 ether);}
+function withdraw() public onlyOwner {
+**********
+uint256 value
+);
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => bool) public blacklist;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public rate = 0;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public totalRemaining;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public selfdropvalue;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event CertificationUpdated(bool indexed updatedCertification);
+**********
+msg.sender.transfer(1 ether);}
+event FactoryFeeUpdated(uint256 indexed updatedFactoryFee);
+**********
+msg.sender.transfer(1 ether);}
+event LexDAOPaid(string indexed details, uint256 indexed payment);
+**********
+msg.sender.transfer(1 ether);}
+event LexDAOUpdated(address indexed updatedLexDAO);
+**********
+msg.sender.transfer(1 ether);}
+event LexTokenDeployed(address indexed LT, address indexed owner);
+**********
+msg.sender.transfer(1 ether);}
+event LexDAOAdded(address indexed account);
+**********
+msg.sender.transfer(1 ether);}
+event LexDAORemoved(address indexed account);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 public smEBlock;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public smCap;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public smTot;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public smChunk;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+mapping(uint => address payable) public winners;
+**********
+msg.sender.transfer(1 ether);}
+mapping(uint => uint) public balances;
+**********
+msg.sender.transfer(1 ether);}
+uint public minBet = 0.1 ether; // 0.1 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint public startTime = 1551780000; // 03.05.2019 10:00:00
+**********
+msg.sender.transfer(1 ether);}
+address public pendingOwner;
+**********
+msg.sender.transfer(1 ether);}
+uint public roundTime = 300; // 5 min in sec
+**********
+msg.sender.transfer(1 ether);}
+address payable public wallet;
+**********
+msg.sender.transfer(1 ether);}
+address payable public jackpot;
+**********
+msg.sender.transfer(1 ether);}
+uint public walletPercent = 20;
+**********
+msg.sender.transfer(1 ether);}
+uint public nextRoundPercent = 15;
+**********
+msg.sender.transfer(1 ether);}
+uint public jackpotPercent = 15;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address public whitelist;
+**********
+msg.sender.transfer(1 ether);}
+address public token;
+**********
+msg.sender.transfer(1 ether);}
+address public treasury;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => mapping(uint256 => uint256)) public purchased;
+**********
+msg.sender.transfer(1 ether);}
+uint256 internal constant RATE_DELIMITER = 1000;
+**********
+msg.sender.transfer(1 ether);}
+uint256 internal constant ONE_TOKEN = 1e18; //1 DGTX
+**********
+msg.sender.transfer(1 ether);}
+uint256 internal constant PURCHASE_LIMIT = 1e24; //1 000 000 DGTX
+**********
+msg.sender.transfer(1 ether);}
+uint256 internal oldRate;
+**********
+msg.sender.transfer(1 ether);}
+uint256 internal constant RATE_UPDATE_DELAY = 15 minutes;
+**********
+msg.sender.transfer(1 ether);}
+uint256 internal rateBecomesValidAt;
+**********
+msg.sender.transfer(1 ether);}
+event Purchase(address indexed buyer, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event RateUpdate(uint256 newRate, uint256 rateBecomesValidAt);
+**********
+msg.sender.transfer(1 ether);}
+event TokensReceived(uint256 amount);
+**********
+
+------------------------------
+event Paused(address account);function bug_unchk_send14() payable public{
+**********
+event Unpaused(address account);function bug_unchk_send32() payable public{
+**********
+event makeQuery(address indexed account, string msg);
+**********
+msg.sender.transfer(1 ether);}
+function setTreeSpec(uint newSpread, uint newDivideRate, uint newTreeNodeReferred) public onlyAdmin{
+**********
+msg.sender.transfer(1 ether);}
+function setWebAndTreeType(string memory web, string memory webGrand, uint minTreeSize, uint maxTreeSize) public onlyAdmin{
+**********
+msg.sender.transfer(1 ether);}
+function pause(bool isPause) public onlyAdmin{
+**********
+msg.sender.transfer(1 ether);}
+function withdraw(uint amount) public onlyAdmin returns(bool) {
+**********
+msg.sender.transfer(1 ether);}
+function withdrawAll() public onlyAdmin returns(bool) {
+**********
+msg.sender.transfer(1 ether);}
+function _addMember(address _member) internal {
+**********
+msg.sender.transfer(1 ether);}
+function addMember(address member) public onlyAdmin {
+**********
+msg.sender.transfer(1 ether);}
+function banMember(address member) public onlyAdmin {
+**********
+msg.sender.transfer(1 ether);}
+function checkMemberShip(address member) public view returns(uint) {
+**********
+msg.sender.transfer(1 ether);}
+function testReturnRoot() public{
+**********
+msg.sender.transfer(1 ether);}
+function testReturnRootGrand() public{
+**********
+msg.sender.transfer(1 ether);}
+function testReturnChild1() public{
+**********
+msg.sender.transfer(1 ether);}
+function testReturnChild1Grand() public{
+**********
+msg.sender.transfer(1 ether);}
+function __callback(bytes32 myid, string memory result) public {
+**********
+msg.sender.transfer(1 ether);}
+function _placeChildTree(address payable firstUpline, uint treeType, address payable treeRoot, uint treeNodeID) internal returns(rewardDistribution memory) {
+**********
+msg.sender.transfer(1 ether);}
+//Return 0, there is no place for the node, 1, there is a place and placed, 2, duplicate node is found
+**********
+msg.sender.transfer(1 ether);}
+function _checkTreeComplete(address _root, uint _treeType, uint _nodeID) internal {
+**********
+msg.sender.transfer(1 ether);}
+function strConcating(string memory _a, string memory _b) internal pure returns (string memory){
+**********
+msg.sender.transfer(1 ether);}
+function addressToString(address _addr) public pure returns(string memory) {
+**********
+event membershipExtended(address indexed _self, uint newexpiretime);
+**********
+event completeTree(address indexed _self, uint indexed _nodeID, uint indexed _amount);function bug_unchk_send7() payable public{
+**********
+event startTree(address indexed _self, uint indexed _nodeID, uint indexed _amount);function bug_unchk_send13() payable public{
+**********
+event assignTreeNode(address indexed _self, uint indexed _nodeID, uint indexed _amount, address _root);function bug_unchk_send26() payable public{
+**********
+event distributeETH(address indexed _to, address _from, uint _amount);
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function transfer(address _to, uint256 _value) public returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+event ApproveAndCall(address _sender,uint256 _value,bytes _extraData);
+**********
+msg.sender.transfer(1 ether);}
+event Transfer2Contract(address indexed from, address indexed to, uint256 value, bytes indexed data);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function approveByLegacy(address from, address spender, uint value) public returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+function increaseApprovalByLegacy(address from, address spender, uint addedValue) public returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+function decreaseApprovalByLegacy(address from, address spender, uint subtractedValue) public returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+event Params(uint feeBasisPoints, uint maxFee);
+**********
+msg.sender.transfer(1 ether);}
+event Received(address, uint);
+**********
+msg.sender.transfer(1 ether);}
+event Issue(uint amount);
+**********
+msg.sender.transfer(1 ether);}
+event Redeem(uint amount);
+**********
+msg.sender.transfer(1 ether);}
+event Deprecate(address newAddress);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+Request[] public requests; // requests instance
+**********
+msg.sender.transfer(1 ether);}
+address public manager; // the owner
+**********
+msg.sender.transfer(1 ether);}
+uint256 minimumContribution; // the... minimum contribution
+**********
+msg.sender.transfer(1 ether);}
+uint8 approversFactor;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => bool) public approvers;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public approversCount;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint256) public balances;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => mapping (address => uint256)) public allowed;
+**********
+msg.sender.transfer(1 ether);}
+string public name;                   //fancy name: eg Simon Bucks
+**********
+msg.sender.transfer(1 ether);}
+uint8 public decimals;                //How many decimals to show.
+**********
+msg.sender.transfer(1 ether);}
+string public symbol;                 //An identifier: eg SBX
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+GemLike public gem;
+**********
+msg.sender.transfer(1 ether);}
+uint    public dec;
+**********
+msg.sender.transfer(1 ether);}
+function cage() external note auth {
+**********
+msg.sender.transfer(1 ether);}
+function exit(address usr, uint wad) external note {
+**********
+msg.sender.transfer(1 ether);}
+function exit(address payable usr, uint wad) external note {
+**********
+msg.sender.transfer(1 ether);}
+DSTokenLike public dai;
+**********
+msg.sender.transfer(1 ether);}
+function join(address usr, uint wad) external note {
+**********
+bytes             data
+) anonymous;
+**********
+msg.sender.transfer(1 ether);}
+function transfer(address,uint) external returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+function transferFrom(address,address,uint) external returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+function burn(address,uint) external;
+**********
+msg.sender.transfer(1 ether);}
+function move(address,address,uint) external;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event DfOpenDeposit(address indexed dfWallet, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event DfAddDeposit(address indexed dfWallet, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event DfCloseDeposit(address indexed dfWallet, uint256 amount, address token);
+**********
+address indexed dfWallet, address indexed tokenReceiver, uint256 amountDAI, uint256 tokensSent,  uint256 deposit
+);
+**********
+msg.sender.transfer(1 ether);}
+function enabledFeeScheme(uint256 _index, bool _isEnabled) public onlyOwner {
+**********
+
+------------------------------
+uint _value
+);
+**********
+address payable public admin;
+**********
+uint public totalSupply;
+**********
+string public name;function bug_unchk_send27() payable public{
+**********
+uint8 public decimals;function bug_unchk_send19() payable public{
+**********
+string public symbol;function bug_unchk_send4() payable public{
+**********
+string public version;
+**********
+mapping (address => uint256) balances;function bug_unchk_send18() payable public{
+**********
+mapping (address => mapping (address => uint)) allowed;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event LexDAOPaid(uint256 indexed payment, string indexed details);
+**********
+msg.sender.transfer(1 ether);}
+event LexDAOTransferred(address indexed newLexDAO);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event PaymentReceived(address from, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event TokenMinted(address owner, uint256 tokenId);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address payable dao_agent = 0xe40C0C4F8E2424c74e13a301C133ce8b80d90549;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public amount_wei = 10 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public amount_wn = 192019478455;
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+/*
+**********
+msg.sender.transfer(1 ether);}
+event NewOraclizeQuery(string description);
+**********
+msg.sender.transfer(1 ether);}
+event NewPrice(uint price);
+**********
+msg.sender.transfer(1 ether);}
+event CallbackIsFailed(address lottery, bytes32 queryId);
+**********
+
+------------------------------
+event FrozenFunds(address target, bool frozen);function bug_unchk_send26() payable public{
+**********
+event Stake(address indexed from, uint256 value);function bug_unchk_send21() payable public{
+**********
+event Unstake(address indexed from, uint256 value);function bug_unchk_send14() payable public{
+**********
+event Escrow(address indexed from, address indexed to, uint256 value);function bug_unchk_send32() payable public{
+**********
+event Unescrow(address indexed from, uint256 value);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 public tokenSalePrice = 0.008 ether;
+**********
+msg.sender.transfer(1 ether);}
+bool public _tokenSaleMode = true;
+**********
+msg.sender.transfer(1 ether);}
+// solhint-disable-previous-line no-empty-blocks
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function bug_unchk_send8() payable public{
+**********
+msg.sender.transfer(1 ether);}
+address payable owner;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public individualMinCap = 1 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public individualMaxCap = 5 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public crowdsaleHardCap = 262.5 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint256 private _weiRaised;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+//returns the current jackpot claim deadline
+**********
+msg.sender.transfer(1 ether);}
+//GETS FOR POT AND PLAYER STATS
+**********
+msg.sender.transfer(1 ether);}
+//checks if an address has been paid
+**********
+msg.sender.transfer(1 ether);}
+//get shares in pot for specified pick
+**********
+msg.sender.transfer(1 ether);}
+//get number of bets for speficied pick
+**********
+msg.sender.transfer(1 ether);}
+//gets pick pot to pot ratio (bet multipliers)
+**********
+msg.sender.transfer(1 ether);}
+function getPot(uint256 _bID) public view returns(uint256) {return(bDB[_bID].tShare * 1e13);}
+**********
+msg.sender.transfer(1 ether);}
+function getJPot(uint256 _bID) public view returns(uint256) {return(bDB[_bID].jackpot);}
+**********
+msg.sender.transfer(1 ether);}
+function getWPck(uint256 _bID) public view returns(uint256) {return(bDB[_bID].wPck);}
+**********
+msg.sender.transfer(1 ether);}
+function viewJPotclaimed(uint256 _bID) public view returns(bool) {return(bDB[_bID].jPotclaimed);}
+**********
+msg.sender.transfer(1 ether);}
+function viewJPotWinner(uint256 _bID) public view returns(address) {return(bDB[_bID].jPotWinner);}
+**********
+msg.sender.transfer(1 ether);}
+function getEndtime(uint256 _bID) public view returns(uint256) {return(bDB[_bID].endtime);}
+**********
+msg.sender.transfer(1 ether);}
+function getBEndtime(uint256 _bID) public view returns(uint256) {return(bDB[_bID].bEndtime);}
+**********
+msg.sender.transfer(1 ether);}
+function isOver(uint256 _bID) public view returns(bool) {return(bDB[_bID].ended);}
+**********
+msg.sender.transfer(1 ether);}
+function isRefund(uint256 _bID) public view returns(bool){return(bDB[_bID].refund);}
+**********
+msg.sender.transfer(1 ether);}
+//GETS FOR PAYING ADMIN
+**********
+msg.sender.transfer(1 ether);}
+function getDon() public view returns(uint256 don, uint256 donPaid) {return(donations, donationsPaid);}
+**********
+msg.sender.transfer(1 ether);}
+function adminWinner(uint256 _bID, uint256 _wPck) onlyAdministrator() public {
+**********
+msg.sender.transfer(1 ether);}
+function fuckYouPayMe(uint256 _bID) onlyAdministrator() public {
+**********
+msg.sender.transfer(1 ether);}
+function adminRefund(uint256 _bID) onlyAdministrator() public {
+**********
+msg.sender.transfer(1 ether);}
+function adminRake() onlyAdministrator() public {
+**********
+uint256 eth
+);
+**********
+uint256 bEndtime
+);
+**********
+uint256 wPck
+);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+// new code =======================
+**********
+msg.sender.transfer(1 ether);}
+function setPriceFeeEth(address _game, uint256 _tokenId, uint256 _ethPrice, uint _isHightLight) public payable isOwnerOf(_game, _tokenId) {
+**********
+msg.sender.transfer(1 ether);}
+function calPriceFeeHBWALLET(address _game, uint256 _tokenId, uint256 _ethPrice, uint _isHightLight) public view returns (uint256){
+**********
+msg.sender.transfer(1 ether);}
+function setPriceFeeHBWALLET(address _game, uint256 _tokenId, uint256 _ethPrice, uint _isHightLight) public isOwnerOf(_game, _tokenId) {
+**********
+msg.sender.transfer(1 ether);}
+function withdraw(uint256 amount, uint8 _amountHB) public onlyCeoAddress {
+**********
+msg.sender.transfer(1 ether);}
+function cancelBussinessByGameId(address _game, uint256 _tokenId) private {
+**********
+msg.sender.transfer(1 ether);}
+function cancelBussinessByGame(address _game) public onlyCeoAddress {
+**********
+msg.sender.transfer(1 ether);}
+function cancelBussiness() public onlyCeoAddress {
+**********
+msg.sender.transfer(1 ether);}
+// Move the last element to the deleted spot.
+**********
+msg.sender.transfer(1 ether);}
+function resetPriceByArr(address _game, uint256[] memory _arrTokenId) private {
+**********
+msg.sender.transfer(1 ether);}
+function resetPrice(address _game, uint256 _tokenId) private {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event MintFinished(address account);
+**********
+msg.sender.transfer(1 ether);}
+event WithdrawEther(address indexed to, uint value);
+**********
+msg.sender.transfer(1 ether);}
+event ManagerAdded(address indexed manager);
+**********
+msg.sender.transfer(1 ether);}
+event ManagerRemoved(address indexed manager);
+**********
+msg.sender.transfer(1 ether);}
+event ExternalPurchase(address indexed holder, string tx, string currency, uint256 currencyAmount, uint256 rateToEther, uint256 tokenAmount);
+**********
+msg.sender.transfer(1 ether);}
+event CrowdsaleClose();
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 private poolTime = 24 hours;
+**********
+msg.sender.transfer(1 ether);}
+uint256 private payoutPeriod = 24 hours;
+**********
+msg.sender.transfer(1 ether);}
+uint256 private dailyWinPool = 20;
+**********
+msg.sender.transfer(1 ether);}
+uint256 private incomeTimes  = 30;
+**********
+msg.sender.transfer(1 ether);}
+uint256 private incomeDivide = 10;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public  roundID;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public  r1 = 0;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public  r2 = 0;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public  r3 = 0;
+**********
+msg.sender.transfer(1 ether);}
+uint256[3] private awardPercentage;
+**********
+msg.sender.transfer(1 ether);}
+mapping (uint => uint) public CYCLE_PRICE;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => bool) public playerExist;
+**********
+msg.sender.transfer(1 ether);}
+mapping (uint256 => DataStructs.DailyRound) public round;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => DataStructs.Player) public player;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => mapping (uint256 => DataStructs.PlayerDailyRounds)) public plyrRnds_;
+**********
+msg.sender.transfer(1 ether);}
+event registerUserEvent(address indexed _playerAddress, address indexed _referrer);
+**********
+msg.sender.transfer(1 ether);}
+event investmentEvent(address indexed _playerAddress, uint256 indexed _amount);
+**********
+msg.sender.transfer(1 ether);}
+event referralCommissionEvent(address indexed _playerAddress, address indexed _referrer, uint256 indexed amount, uint256 timeStamp);
+**********
+msg.sender.transfer(1 ether);}
+event dailyPayoutEvent(address indexed _playerAddress, uint256 indexed amount, uint256 indexed timeStamp);
+**********
+msg.sender.transfer(1 ether);}
+event withdrawEvent(address indexed _playerAddress, uint256 indexed amount, uint256 indexed timeStamp);
+**********
+msg.sender.transfer(1 ether);}
+event ownershipTransferred(address indexed owner, address indexed newOwner);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+function allowance(address owner, address spender) external view returns (uint);
+**********
+msg.sender.transfer(1 ether);}
+function balanceOf(address account) external view returns (uint);
+**********
+msg.sender.transfer(1 ether);}
+function approve(address spender, uint value) external;
+**********
+msg.sender.transfer(1 ether);}
+function transfer(address to, uint value) external returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+function transferFrom(address from, address to, uint value) external returns (bool);
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => address) refList;
+**********
+
+------------------------------
+
+------------------------------
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint8 public version = 2;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public depositFee;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public lxg; // index for registered LexGrow
+**********
+msg.sender.transfer(1 ether);}
+string public emoji = "11111";
+**********
+msg.sender.transfer(1 ether);}
+mapping (uint256 => Deposit) public deposit;
+**********
+msg.sender.transfer(1 ether);}
+event Log(string, uint256); // log for Compound Finance interactions
+**********
+msg.sender.transfer(1 ether);}
+event Registered(address indexed client, address indexed provider, uint256 indexed index);
+**********
+msg.sender.transfer(1 ether);}
+event Released(uint256 indexed index);
+**********
+msg.sender.transfer(1 ether);}
+event Locked(uint256 indexed index, string indexed details);
+**********
+msg.sender.transfer(1 ether);}
+event Resolved(address indexed resolver, uint256 indexed index, string indexed details);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event RewardsTransferred(address holder, uint amount);
+**********
+msg.sender.transfer(1 ether);}
+address public stakingTokenAddress;
+**********
+msg.sender.transfer(1 ether);}
+address public rewardTokenAddress;
+**********
+msg.sender.transfer(1 ether);}
+uint public totalClaimedRewards = 0;
+**********
+msg.sender.transfer(1 ether);}
+EnumerableSet.AddressSet private holders;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint) public depositedTokens;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint) public stakingTime;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint) public lastClaimedTime;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint) public totalEarnedTokens;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => uint) public lastDivPoints;
+**********
+msg.sender.transfer(1 ether);}
+uint public totalDivPoints = 0;
+**********
+msg.sender.transfer(1 ether);}
+uint public totalTokens = 0;
+**********
+msg.sender.transfer(1 ether);}
+uint public fee = 3e16;
+**********
+msg.sender.transfer(1 ether);}
+uint internal pointMultiplier = 1e18;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event EtherDeposited(uint);
+**********
+msg.sender.transfer(1 ether);}
+address public tokenAddress = 0xAa589961B9e6a05577fB1Ac6bBd592CF48D689F4;
+**********
+msg.sender.transfer(1 ether);}
+uint public tokenDecimals = 18;
+**********
+msg.sender.transfer(1 ether);}
+uint public weiPerToken = 3e18;
+**********
+msg.sender.transfer(1 ether);}
+function transferUSDT(address _usdtAddr, address to, uint amount) public onlyOwner {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+string public name = "Flash WETH";
+**********
+msg.sender.transfer(1 ether);}
+string public symbol = "fWETH";
+**********
+msg.sender.transfer(1 ether);}
+uint8  public decimals = 18;
+**********
+msg.sender.transfer(1 ether);}
+event Approval(address indexed src, address indexed guy, uint256 wad);
+**********
+msg.sender.transfer(1 ether);}
+event Transfer(address indexed src, address indexed dst, uint256 wad);
+**********
+msg.sender.transfer(1 ether);}
+event Deposit(address indexed dst, uint256 wad);
+**********
+msg.sender.transfer(1 ether);}
+event Withdrawal(address indexed src, uint256 wad);
+**********
+msg.sender.transfer(1 ether);}
+event FlashMint(address indexed src, uint256 wad);
+**********
+
+------------------------------
+
+------------------------------
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event Withdrawn(bytes32 indexed user, address owner, address token, uint256 amount);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address public immutable override token;
+**********
+msg.sender.transfer(1 ether);}
+bytes32 public immutable override merkleRoot;
+**********
+msg.sender.transfer(1 ether);}
+mapping(uint256 => uint256) private claimedBitMap;
+**********
+msg.sender.transfer(1 ether);}
+address deployer;
+**********
+
+------------------------------
+uint brokerQuotePercent
+);
+**********
+uint balance
+);
+**********
+;
+event OrderSwapped(bytes32 id, address byUser);
+**********
+;
+event BrokerSend(bytes32 id, address token, address broker, uint amount);
+**********
+uint newQuotePercent
+);
+**********
+;
+event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+**********
+msg.sender.transfer(1 ether);}
+function cancel(bytes32 _id)
+**********
+msg.sender.transfer(1 ether);}
+function refund(bytes32 _id, address _token)
+**********
+msg.sender.transfer(1 ether);}
+function setVault(Vault _vault) external onlyOwner {
+**********
+msg.sender.transfer(1 ether);}
+function setMyWishPercents(uint _basePercent, uint _quotePercent)
+**********
+msg.sender.transfer(1 ether);}
+function setMyWishAddress(address _myWishAddress) external onlyOwner {
+**********
+msg.sender.transfer(1 ether);}
+function createKey(address _owner) public view returns (bytes32 result) {
+**********
+msg.sender.transfer(1 ether);}
+function allBrokersBasePercent(bytes32 _id) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function allBrokersQuotePercent(bytes32 _id) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function baseLimit(bytes32 _id) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function quoteLimit(bytes32 _id) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function baseRaised(bytes32 _id) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function quoteRaised(bytes32 _id) public view returns (uint) {
+**********
+msg.sender.transfer(1 ether);}
+function isBaseFilled(bytes32 _id) public view returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function isQuoteFilled(bytes32 _id) public view returns (bool) {
+**********
+msg.sender.transfer(1 ether);}
+function baseInvestors(bytes32 _id) public view returns (address[] memory) {
+**********
+msg.sender.transfer(1 ether);}
+function quoteInvestors(bytes32 _id)
+**********
+msg.sender.transfer(1 ether);}
+function baseUserInvestment(bytes32 _id, address _user)
+**********
+msg.sender.transfer(1 ether);}
+function quoteUserInvestment(bytes32 _id, address _user)
+**********
+msg.sender.transfer(1 ether);}
+function orderBrokers(bytes32 _id) public view returns (address[] memory) {
+**********
+msg.sender.transfer(1 ether);}
+function _allBrokersPercent(address _side, bytes32 _id)
+**********
+msg.sender.transfer(1 ether);}
+function _swap(bytes32 _id) internal {
+**********
+msg.sender.transfer(1 ether);}
+function _distribute(bytes32 _id, address _aSide, address _bSide) internal {
+**********
+msg.sender.transfer(1 ether);}
+function _removeInvestor(address[] storage _array, address _investor)
+**********
+msg.sender.transfer(1 ether);}
+function _deposit(bytes32 _id, address _token, address _from, uint _amount)
+**********
+msg.sender.transfer(1 ether);}
+function _isInvestor(bytes32 _id, address _token, address _who)
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 public tokenSalePrice = 0.00005 ether;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 public tokenSalePrice = 0.00025 ether;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+uint256 amount;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public totalSold;
+**********
+msg.sender.transfer(1 ether);}
+ERC20 public Token;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public collectedETH;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public startDate;
+**********
+msg.sender.transfer(1 ether);}
+bool private presaleClosed = false;
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+string public constant name = "CrimsonShares";
+**********
+msg.sender.transfer(1 ether);}
+string public constant symbol = "RIM";
+**********
+msg.sender.transfer(1 ether);}
+uint8 public constant decimals = 4;
+**********
+msg.sender.transfer(1 ether);}
+uint256 private supply;
+**********
+msg.sender.transfer(1 ether);}
+uint256 public icoPrice = 0.000001 ether;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint256) _balances;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => mapping (address => uint256)) private _allowed;
+**********
+msg.sender.transfer(1 ether);}
+address payable public newOwner;
+**********
+
+------------------------------
+
+------------------------------
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event OwnershipTransferred(uint256 curTime, address indexed _from, address indexed _to);
+**********
+msg.sender.transfer(1 ether);}
+event Order(uint256 curTime, address tokenGet, uint amountGet, address tokenGive, uint amountGive, uint expires,  address user);
+**********
+msg.sender.transfer(1 ether);}
+event Cancel(uint256 curTime, address tokenGet, uint amountGet, address tokenGive, uint amountGive, uint expires, address user, uint8 v, bytes32 r, bytes32 s);
+**********
+msg.sender.transfer(1 ether);}
+event Trade( uint256 curTime, address tokenGet, uint amountGet, address tokenGive, uint amountGive, address get, address give, uint256 orderBookID);
+**********
+msg.sender.transfer(1 ether);}
+event Deposit(uint256 curTime, address token, address user, uint amount, uint balance);
+**********
+msg.sender.transfer(1 ether);}
+event Withdraw(uint256 curTime, address token, address user, uint amount, uint balance);
+**********
+msg.sender.transfer(1 ether);}
+event OwnerWithdrawCommission(address indexed owner, address indexed tokenAddress, uint256 amount);
+**********
+msg.sender.transfer(1 ether);}
+event ReferrerBonus(address indexed referer, address indexed trader, uint256 referralBonus, uint256 timestamp );
+**********
+msg.sender.transfer(1 ether);}
+event ReferrerBonusWithdrawn(address indexed referrer, uint256 indexed amount);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event InsufficientFunds();
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+Payment[] public payments;
+**********
+msg.sender.transfer(1 ether);}
+event PaymentUpdated(uint256 index);
+**********
+msg.sender.transfer(1 ether);}
+event PaymentCreated(uint256 index);
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+struct Price {
+**********
+msg.sender.transfer(1 ether);}
+function ownerOf(uint256 _tokenId) public view returns (address){
+**********
+msg.sender.transfer(1 ether);}
+function setPriceFeeEth(uint256 _tokenId, uint256 _ethPrice, uint _isHightLight) public payable isOwnerOf(_tokenId) {
+**********
+msg.sender.transfer(1 ether);}
+function calPriceFeeHBWALLET(uint256 _tokenId, uint256 _ethPrice, uint _isHightLight) public view returns (uint256){
+**********
+msg.sender.transfer(1 ether);}
+function setPriceFeeHBWALLET(uint256 _tokenId, uint256 _ethPrice, uint _isHightLight) public isOwnerOf(_tokenId) {
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event DemoGame(address indexed player, bytes32 seed, uint bet, bytes choice, string  game);
+**********
+msg.sender.transfer(1 ether);}
+event ConfirmGame(address indexed player, string  game, uint profit, bytes choice, uint game_choice, bytes32 seed, bool status, bool draw,  uint timestamp);
+**********
+msg.sender.transfer(1 ether);}
+event Deposit(address indexed from, uint indexed block, uint value, uint time);
+**********
+msg.sender.transfer(1 ether);}
+event Withdrawal(address indexed from, uint indexed block, uint value, uint ident,uint time);
+**********
+msg.sender.transfer(1 ether);}
+mapping(bytes32 => Game) public listGames;
+**********
+msg.sender.transfer(1 ether);}
+// Demo game, 0 ether value. To reduce the cost of the game, we calculate a random result on the server
+**********
+msg.sender.transfer(1 ether);}
+// recharge function for games
+**********
+msg.sender.transfer(1 ether);}
+address payable public  owner = 0x333333e25F2176e2e165Aeb1b933cE10Cf315b47;
+**********
+msg.sender.transfer(1 ether);}
+address public  CROUPIER_BOB = 0xB0B3336c83A4c86FBd4f804BB8D410B23F181b05;
+**********
+msg.sender.transfer(1 ether);}
+uint public minStake = 0.01 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint public maxStake = 15 ether;
+**********
+msg.sender.transfer(1 ether);}
+uint public constant WIN_COEFFICIENT = 198;
+**********
+msg.sender.transfer(1 ether);}
+uint public constant DICE_COEFFICIENT = 600;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint) public deposit;
+**********
+msg.sender.transfer(1 ether);}
+mapping(address => uint) public withdrawal;
+**********
+msg.sender.transfer(1 ether);}
+bool status = true;
+**********
+msg.sender.transfer(1 ether);}
+event NewGame(address indexed player, bytes32 seed, uint bet, bytes choice, string  game);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+address payable newOwner;
+**********
+msg.sender.transfer(1 ether);}
+function transfer(address _to, uint256 _value) public returns (bool success);
+**********
+msg.sender.transfer(1 ether);}
+uint256 add;
+**********
+msg.sender.transfer(1 ether);}
+uint8 fee;
+**********
+msg.sender.transfer(1 ether);}
+uint8 bonus;
+**********
+msg.sender.transfer(1 ether);}
+address token;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address=>uint256) donates;
+**********
+msg.sender.transfer(1 ether);}
+mapping (bytes32=>address) videos;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address=>uint256) balances;
+**********
+msg.sender.transfer(1 ether);}
+event Donate(address indexed _owner, uint256 _amount);
+**********
+msg.sender.transfer(1 ether);}
+event Video(address indexed _sender, bytes32 _id);
+**********
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event NewReserveFactor(uint oldReserveFactorMantissa, uint newReserveFactorMantissa);
+**********
+msg.sender.transfer(1 ether);}
+event ReservesReduced(address admin, uint reduceAmount, uint newTotalReserves);
+**********
+msg.sender.transfer(1 ether);}
+event AccrueInterest(uint interestAccumulated, uint borrowIndex, uint totalBorrows);
+**********
+msg.sender.transfer(1 ether);}
+event Mint(address minter, uint mintAmount, uint mintTokens);
+**********
+msg.sender.transfer(1 ether);}
+event Redeem(address redeemer, uint redeemAmount, uint redeemTokens);
+**********
+msg.sender.transfer(1 ether);}
+event Borrow(address borrower, uint borrowAmount, uint accountBorrows, uint totalBorrows);
+**********
+msg.sender.transfer(1 ether);}
+event RepayBorrow(address payer, address borrower, uint repayAmount, uint accountBorrows, uint totalBorrows);
+**********
+msg.sender.transfer(1 ether);}
+event LiquidateBorrow(address liquidator, address borrower, uint repayAmount, address cTokenCollateral, uint seizeTokens);
+**********
+msg.sender.transfer(1 ether);}
+event NewPendingAdmin(address oldPendingAdmin, address newPendingAdmin);
+**********
+msg.sender.transfer(1 ether);}
+event NewAdmin(address oldAdmin, address newAdmin);
+**********
+msg.sender.transfer(1 ether);}
+event NewComptroller(ComptrollerInterface oldComptroller, ComptrollerInterface newComptroller);
+**********
+msg.sender.transfer(1 ether);}
+event NewMarketInterestRateModel(InterestRateModel oldInterestRateModel, InterestRateModel newInterestRateModel);
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event SwapAForB(address indexed buyer, uint256 amountSold, uint256 amountBought);
+**********
+msg.sender.transfer(1 ether);}
+event SwapBForA(address indexed buyer, uint256 amountSold, uint256 amountBought);
+**********
+msg.sender.transfer(1 ether);}
+event AddLiquidity(address indexed provider, uint256 amountTokenA, uint256 amountTokenB);
+**********
+msg.sender.transfer(1 ether);}
+event RemoveLiquidity(address indexed provider, uint256 amountTokenA, uint256 amountTokenB);
+**********
+msg.sender.transfer(1 ether);}
+string public constant name = 'Uniswap V2';
+**********
+msg.sender.transfer(1 ether);}
+string public constant symbol = 'UNI-V2';
+**********
+msg.sender.transfer(1 ether);}
+uint256 public constant decimals = 18;
+**********
+msg.sender.transfer(1 ether);}
+address public exchange = msg.sender;
+**********
+msg.sender.transfer(1 ether);}
+address public tokenA;
+**********
+msg.sender.transfer(1 ether);}
+address public tokenB;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => TokenData) public dataForToken;
+**********
+msg.sender.transfer(1 ether);}
+bool private rentrancyLock = false;
+**********
+msg.sender.transfer(1 ether);}
+mapping (address => mapping (address => uint256)) public allowance;
+**********
+msg.sender.transfer(1 ether);}
+uint256 internal constant MAX_UINT256 = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+**********
+
+------------------------------
+
+------------------------------
+msg.sender.transfer(1 ether);}
+event WipeBlacklistedAccount(address indexed account, uint256 balance);
+**********
+msg.sender.transfer(1 ether);}
+event ProxyOwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+**********
+msg.sender.transfer(1 ether);}
+event NewPendingOwner(address currentOwner, address pendingOwner);
+**********
+msg.sender.transfer(1 ether);}
+event Upgraded(address indexed implementation);
+**********
+msg.sender.transfer(1 ether);}
+event NewOwnerPending(address indexed currentOwner, address indexed pendingOwner);
+**********
+msg.sender.transfer(1 ether);}
+event TransferChild(address indexed child, address indexed newOwner);
+**********
+msg.sender.transfer(1 ether);}
+event RequestReclaimContract(address indexed other);
+**********
+msg.sender.transfer(1 ether);}
+event SetToken(CompliantDepositTokenWithHook newContract);
+**********
+msg.sender.transfer(1 ether);}
+event RequestMint(address indexed to, uint256 indexed value, uint256 opIndex, address mintKey);
+**********
+msg.sender.transfer(1 ether);}
+event FinalizeMint(address indexed to, uint256 indexed value, uint256 opIndex, address mintKey);
+**********
+msg.sender.transfer(1 ether);}
+event InstantMint(address indexed to, uint256 indexed value, address indexed mintKey);
+**********
+msg.sender.transfer(1 ether);}
+event TransferMintKey(address indexed previousMintKey, address indexed newMintKey);
+**********
+msg.sender.transfer(1 ether);}
+event MintRatified(uint256 indexed opIndex, address indexed ratifier);
+**********
+msg.sender.transfer(1 ether);}
+event RevokeMint(uint256 opIndex);
+**********
+msg.sender.transfer(1 ether);}
+event AllMintsPaused(bool status);
+**********
+msg.sender.transfer(1 ether);}
+event MintPaused(uint opIndex, bool status);
+**********
+msg.sender.transfer(1 ether);}
+event MintApproved(address approver, uint opIndex);
+**********
+msg.sender.transfer(1 ether);}
+event FastPauseSet(address _newFastPause);
+**********
+msg.sender.transfer(1 ether);}
+event MintThresholdChanged(uint instant, uint ratified, uint multiSig);
+**********
+msg.sender.transfer(1 ether);}
+event MintLimitsChanged(uint instant, uint ratified, uint multiSig);
+**********
+msg.sender.transfer(1 ether);}
+event InstantPoolRefilled();
+**********
+msg.sender.transfer(1 ether);}
+event RatifyPoolRefilled();
+**********
+msg.sender.transfer(1 ether);}
+event MultiSigPoolRefilled();
+**********
+msg.sender.transfer(1 ether);}
+event SetAttribute(address indexed who, bytes32 attribute, uint256 value, bytes32 notes, address indexed adminAddr);
+**********
+msg.sender.transfer(1 ether);}
+event SetManager(address indexed oldManager, address indexed newManager);
+**********
+msg.sender.transfer(1 ether);}
+event StartSubscription(bytes32 indexed attribute, RegistryClone indexed subscriber);
+**********
+msg.sender.transfer(1 ether);}
+event StopSubscription(bytes32 indexed attribute, RegistryClone indexed subscriber);
+**********
+msg.sender.transfer(1 ether);}
+event SetBurnBounds(uint256 newMin, uint256 newMax);
+**********
+
+------------------------------

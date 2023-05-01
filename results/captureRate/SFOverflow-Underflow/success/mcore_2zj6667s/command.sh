@@ -1,0 +1,1 @@
+/home/xiaofeng/.local/bin/manticore buggy_0x830afc4c0897a8f84bbf77f15ba35951278e4634.sol --contract SunRich

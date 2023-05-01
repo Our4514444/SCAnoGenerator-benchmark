@@ -1,0 +1,47 @@
+    0: PUSH1 0x55
+    2: PUSH1 0x23
+    4: PUSH1 0xb
+    6: DUP3
+    7: DUP3
+    8: DUP3
+    9: CODECOPY
+    a: DUP1
+    b: MLOAD
+    c: PUSH1 0x0
+    e: BYTE
+    f: PUSH1 0x73
+   11: EQ
+   12: PUSH1 0x16
+   14: JUMPI
+   15: INVALID
+   16: JUMPDEST
+   17: ADDRESS
+   18: PUSH1 0x0
+   1a: MSTORE
+   1b: PUSH1 0x73
+   1d: DUP2
+   1e: MSTORE8
+   1f: DUP3
+   20: DUP2
+   21: RETURN
+   22: INVALID
+   23: PUSH20 0x0
+   38: ADDRESS
+   39: EQ
+   3a: PUSH1 0x80
+   3c: PUSH1 0x40
+   3e: MSTORE
+   3f: PUSH1 0x0
+   41: DUP1
+   42: REVERT
+   43: INVALID
+   44: LOG2
+   45: PUSH6 0x627a7a723158
+   4c: SHA3
+   4d: INVALID
+   4e: CALLDATACOPY
+   4f: SDIV
+   50: INVALID
+   51: INVALID
+   52: INVALID
+   53: PUSH14 0x11ff9aa1b2ab08e620ec575a47e7

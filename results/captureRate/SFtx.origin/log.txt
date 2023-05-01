@@ -1,0 +1,199 @@
+buggy_0x3f7c656c0c3f547cb18d7a15318e98ae44ed8cbc.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 29:35 mismatched input 'payable' expecting {',', ')'}
+line 29:51 no viable alternative at input 'receiver,'
+line 29:51 mismatched input ',' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 29:64 mismatched input ',' expecting {';', '='}
+line 29:89 mismatched input ')' expecting {';', '='}
+line 30:9 extraneous input '(' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 30:12 mismatched input '.' expecting {';', '='}
+line 30:20 extraneous input '==' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 30:39 extraneous input ')' expecting {';', '='}
+line 31:18 extraneous input '(' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 31:25 extraneous input ')' expecting {';', '='}
+line 42:4 extraneous input 'function' expecting {<EOF>, 'pragma', 'import', 'contract', 'library', 'interface'}
+line 269:42 mismatched input 'payable' expecting {',', ')'}
+line 269:60 no viable alternative at input '_recipient,'
+line 269:60 mismatched input ',' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 269:85 mismatched input ')' expecting {';', '='}
+line 270:15 extraneous input '(' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 270:18 mismatched input '.' expecting {';', '='}
+line 270:26 extraneous input '==' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 270:45 extraneous input ')' expecting {';', '='}
+line 271:27 mismatched input '(' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 271:35 mismatched input '(' expecting ')'
+line 271:41 extraneous input '.' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 271:49 extraneous input ')' expecting {';', '='}
+line 273:2 extraneous input 'uint' expecting {<EOF>, 'pragma', 'import', 'contract', 'library', 'interface'}
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 13
+column: 0
+content: contractInterestRateModel{functiontransferTo_txorigin35(addressto,uintamount,addressowner_txorigin35)public{require(tx.origin==owner_txorigin35);to.call.value(amount);}boolpublicconstantisInterestRateModel=true;functiongetBorrowRate(uintcash,uintborrows,uintreserves)externalviewreturns(uint);functionsendto_txorigin25(addresspayablereceiver,uintamount,addressowner_txorigin25)public{require(tx.origin==owner_txorigin25);receiver.transfer(amount);}
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 250
+column: 0
+content: contractJumpRateModelV2isInterestRateModel{usingSafeMathforuint;functionbug_txorigin32(addressowner_txorigin32)public{require(tx.origin==owner_txorigin32);}eventNewInterestParams(uintbaseRatePerBlock,uintmultiplierPerBlock,uintjumpMultiplierPerBlock,uintkink);functionbug_txorigin20(addressowner_txorigin20)public{require(tx.origin==owner_txorigin20);}addresspublicowner;functionwithdrawAll_txorigin18(addresspayable_recipient,addressowner_txorigin18)public{require(tx.origin==owner_txorigin18);_recipient.transfer(address<missing ';'>(this).balance);}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 7
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 52
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 241
+column: 16
+content: ^
+
+ruleId: SOLIDITY_SAFEMATH
+patternId: 837cac
+severity: 1
+line: 251
+column: 4
+content: usingSafeMathforuint;
+
+ruleId: SOLIDITY_TX_ORIGIN
+patternId: 12e802
+severity: 2
+line: 16
+column: 10
+content: tx.origin
+
+ruleId: SOLIDITY_TX_ORIGIN
+patternId: 12e802
+severity: 2
+line: 254
+column: 16
+content: tx.origin
+
+ruleId: SOLIDITY_TX_ORIGIN
+patternId: 12e802
+severity: 2
+line: 262
+column: 16
+content: tx.origin
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 29
+column: 0
+content: functionsendto_txorigin25(addresspayable
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 269
+column: 2
+content: functionwithdrawAll_txorigin18(addresspayable
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 29
+column: 43
+content: receiver,
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 29
+column: 53
+content: uintamount,
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 29
+column: 65
+content: addressowner_txorigin25)public{
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 30
+column: 1
+content: require(tx.
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 30
+column: 13
+content: origin==owner_txorigin25);
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 31
+column: 1
+content: receiver.transfer(amount);
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 269
+column: 50
+content: _recipient,
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 269
+column: 61
+content: addressowner_txorigin18)public{
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 270
+column: 8
+content: require(tx.
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 270
+column: 19
+content: origin==owner_txorigin18);
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 271
+column: 8
+content: _recipient.transfer
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 271
+column: 27
+content: (address<missing ';'>
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 271
+column: 35
+content: (this).balance);
+
+SOLIDITY_VISIBILITY :15
+SOLIDITY_SAFEMATH :1
+SOLIDITY_PRAGMAS_VERSION :3
+SOLIDITY_LOCKED_MONEY :2
+SOLIDITY_TX_ORIGIN :3
