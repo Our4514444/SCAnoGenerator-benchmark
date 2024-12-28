@@ -47,7 +47,6 @@ SCAnoGenerator-benchmark repository contains anomalistic contracts that have bee
     │ ├── accuracyRate
     │ │ ├── SF (the address names of the contracts injected with anomalies)
     │ │ ├── SG (the address names of the contracts injected with anomalies)
-    │ │ ├── RQ1-assessment.xlsx(details of calculating accuracyRate)
     │ │ 
     │ ├── captureRate(the code and dataset for calculating captureRate)
     │ │ 
@@ -57,12 +56,10 @@ SCAnoGenerator-benchmark repository contains anomalistic contracts that have bee
     │ │ │ ├── SG (Location of anomalies that can be activated (recorded in excel file) and examples of anomalies  │ │ │ │		that cannot be activated (recorded in docx file))
     │ │ ├── expert2
     │ │ ├── expert3
-    │ │ ├── Consistency-evaluation.xlsx(the consistency of results among experts)
     │ │
     │ ├── successRate
     │ │ ├── SF (the address names of the contracts injected with anomalies)
     │ │ ├── SG (the address names of the contracts injected with anomalies)
-    │ │ ├── RQ2-assessment.xlsx(details of calculating successRate and averageAmount)
     │ │
     │ ├── Transaction(Transactions that can be received by contracts in the dataset. Among them, we split dataset 3 into 5 parts)  	   
 
